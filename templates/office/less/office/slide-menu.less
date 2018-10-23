@@ -1,0 +1,389 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+// Slide menu
+// ----------------
+
+
+// Positioning
+.slide-menu-left {
+	#sidebar-toggler {
+		margin-right: @si-base-spacing;
+		float: left;
+	}
+	.sidebar-element {
+		left: -245px;
+		.box-shadow(2px 4px 5px rgba(0,0,0,0.1));
+	}
+}
+.is-mobile.slide-menu-left {
+	.sidebar-element {
+		left: auto;
+		right: 100%;
+		.box-shadow(none);
+	}
+}
+
+.slide-menu-right {
+	#sidebar-toggler {
+		margin-left: @si-base-spacing;
+		float: right;
+	}
+	.sidebar-element {
+		right: -245px;
+		.box-shadow(-2px 4px 5px rgba(0,0,0,0.1));
+	}
+}
+.is-mobile.slide-menu-right {
+	.sidebar-element {
+		right: auto;
+		left: 100%;
+		.box-shadow(none);
+	}
+}
+.office-logo-section {
+	.flex-display(flex);
+	.align-items(center);
+}
+
+@media (min-width: @screen-sm-min) {
+	// .slide-menu-left {
+	// 	#sidebar-toggler { // Fix #8
+	// 		// .flex-display(flex);
+	// 		// .align-items(center);
+	// 		margin-right 0;
+	// 		width: 20px;
+	// 		float: none;
+	// 		+ .logo {
+	// 			padding-left: @si-base-spacing--sm;
+	// 		}
+	// 	}
+	// }
+}
+
+.slide-menu-left, 
+.slide-menu-right {
+	&.offcanvas .sidebar-overlay {
+		visibility: visible;
+		opacity: 1;
+		.transition(.25s ease-in-out opacity);
+	}
+}
+.slide-menu-left.offcanvas .sidebar-element {
+	left: 0;
+}
+.is-mobile.slide-menu-left.offcanvas .sidebar-element {
+	left: auto;
+	right: 0;
+}
+.slide-menu-right.offcanvas .sidebar-element {
+	right: 0;
+}
+.is-mobile.slide-menu-right.offcanvas .sidebar-element {
+	left: 0;
+	right: auto;
+}
+
+
+// Toggler
+#sidebar-toggler {
+	font-size: 20px;
+	line-height: 1;
+	
+	width: 20px;
+	// height: 56px;
+	position: relative;
+	&:hover {
+		cursor: pointer;
+	}
+
+	> .fa {
+		.transition(400ms);
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		.translate(-50%,-50%);
+	}
+	> .fa-bars {
+		opacity: 1;
+		visibility: visible;
+	}
+	> .fa-remove {
+		opacity: 0;
+		visibility: hidden;
+	}
+	&.open {
+		> .fa-bars {
+			opacity: 0;
+			visibility: hidden;
+		}
+		> .fa-remove {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+
+// Menu overlay
+.sidebar-overlay {
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	visibility: hidden;
+	background-color: rgba(0, 0, 0, 0.5);
+	.transition(.25s ease-in-out opacity);
+}
+
+
+// Menu wrapper
+.sidebar-element {
+	background: @si-menu-bg;
+	width: 240px;
+	height: ~"calc(100% - 56px)";
+	padding: 0;
+	position: fixed;
+	top: 56px;
+	z-index: 100;
+	overflow-y: auto;
+	.transition(.5s);
+	&.affix {
+		top: 56px;
+	}
+}
+.is-mobile .sidebar-element {
+	width: 100%;
+}
+
+
+// Menu
+
+// mod_menu
+.office-canvas-menu { // ul
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		list-style: none;
+		position: relative;
+		
+		:not(:last-child) {
+
+		}
+		&.current {
+			> a {
+				background-color: @si-bg-shade;
+			}
+		}
+		
+	}
+	> li {
+
+		a {
+			display: block;
+			padding: @si-base-spacing--sm @si-base-spacing;
+			color: @si-text-color;
+			border-bottom: 1px solid @si-border-color;
+		}
+		
+	}
+	ul { // sub menu
+		margin: 0;
+		padding: 0;
+		> li {
+			
+			> a {
+				position: relative;
+				// color: @si-text-color;
+				padding-left: @si-base-spacing--xl;
+				&:before {
+					display: block;
+					content: '';
+					position: absolute;
+					top: 20px;
+					left: @si-base-spacing;
+					width: 8px;
+					height: 1px;
+					background-color: @si-meta-color;
+				}
+			}
+		}
+		ul {
+			// margin: 0;
+		}
+	}
+}
+
+// mod_office_sidebar
+.es-side-menu {
+	.flex-display(flex);
+	.flex-direction(column);
+	&__title { // similar styling with sp-module-title
+		// color: @si-meta-color;
+		// text-transform: uppercase;
+		padding: @si-base-spacing--sm @si-base-spacing @si-base-spacing; 
+
+		margin: @si-base-spacing 0 0;
+		font-size: 12px;
+		text-transform: uppercase;
+		line-height: 1;
+		font-weight: normal;
+		border-bottom: 1px solid @si-border-color;
+	}
+	&__cover-item {
+		margin: -@si-base-spacing--lg -@si-base-spacing--lg @si-base-spacing--lg;
+		padding: @si-base-spacing--lg;
+		position: relative;
+		overflow: hidden;
+	}
+	&__bg-cover {
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		border: 0;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+	&__user {
+		display: table;
+		// margin-bottom: @si-base-spacing--lg;
+		width: 100%;
+	}
+	&__image, 
+	&__body {
+		display: table-cell;
+		vertical-align: middle;
+		> a {
+			color: #fff;
+			text-shadow: 1px 1px 0 rgba(0,0,0,1);
+			&:hover {
+				color: darken(#fff, 10%);
+			}
+		}
+	}
+	&__image {
+		width: 1%;
+		padding-right: @si-base-spacing;
+	}
+	&__avatar {
+		font-size: 20px;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 40px;
+		margin: 0;
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		border-radius: @si-border-radius-rounded;
+		overflow: hidden;
+		img {
+			display: block;
+			max-width: none;
+			width: 100%;
+			height: 100%;
+			image-rendering: optimizeQuality;
+			border-radius: @si-avatar-radius;
+		}
+	}
+	&__body {
+		width: 100%;
+		> a {
+			font-weight: bold;
+			display: block;
+		}
+	}
+	&__tabs {
+		// background: yellow;
+	}
+}
+
+.es-side-menu-tabs {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+	&__divider {
+		margin: @si-base-spacing--sm 0;
+		height: 1px;
+	}
+	> li > a {
+		display: block;
+		padding: @si-base-spacing--sm @si-base-spacing;
+		border-bottom: 1px solid @si-border-color;
+	}
+}
+
+
+// Login
+#es.es-side-login-form {
+	.o-form-group {
+		margin-bottom: @si-base-spacing--sm;
+	}
+	.g-list-inline {
+		margin-top: @si-base-spacing--sm;
+
+		> li {
+			display: block;
+			padding: 2px 0;
+			> a:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.g-list-inline--dashed > :not(:first-child) {
+		margin-left: 0;
+		padding-left: 0;
+		border-left: 0;
+	}
+}
+#es .es-side-login-form-hd {
+	font-size: @si-font-size--md;
+	font-weight: 500;
+	margin-bottom: @si-base-spacing;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+// For mobile to tablets portrait 
+@media (min-width: 320px) and (max-width: @screen-lg) {
+	body #es.is-tablet,
+	body #es.is-mobile {
+		.btn-es-sidebar-toggle {
+			display: none;		
+		}
+		
+	}
+}
+
+.mobile-footer {
+	display: none;
+	flex: 0 0 auto;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	height: 40px;
+	bottom: 0;
+	background-color: #fff;
+	border-top: 1px solid @si-border-color;
+}
+.mobile-footbar {
+	.flex-display(flex);
+	.flex-wrap(nowrap);
+	.justify-content(space-between);
+	width: 100%;
+	line-height: 40px;
+	&__item {
+		flex: 0 1 auto;
+		text-align: center;
+		min-width: 55px;
+		position: relative;
+		&--center {
+			.flex(1 1 auto);
+		}
+	}
+	&__item-link {
+		display: block;
+	}
+
+}
+// For mobile to tablets portrait 
+@media (min-width: 320px) and (max-width: @screen-lg) {
+	body {
+		&.is-tablet:not(.si-login-page),
+		&.is-mobile:not(.si-login-page) {
+			.body-innerwrapper {
+				padding-bottom: 40px; // Reserve space for mobile footer
+			}
+
+			.mobile-footer {
+				display: block;
+			}
+		}
+	}
+}

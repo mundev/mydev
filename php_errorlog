@@ -1,0 +1,41 @@
+[06-Oct-2018 02:08:28 CST6CDT] PHP Warning:  Failed performing Asido_Driver_GD_Hack::crop() in /home/munawwar/public_html/dev7/administrator/components/com_easysocial/includes/image/adapters/asido/class.image.php on line 228
+[06-Oct-2018 02:08:28 CST6CDT] PHP Warning:  Unable to open source image in /home/munawwar/public_html/dev7/administrator/components/com_easysocial/includes/image/adapters/asido/class.driver.php on line 593
+[06-Oct-2018 02:08:28 CST6CDT] PHP Warning:  Failed to initialize image operations in /home/munawwar/public_html/dev7/administrator/components/com_easysocial/includes/image/adapters/asido/class.image.php on line 208
+[06-Oct-2018 02:08:28 CST6CDT] PHP Warning:  Unable to open source image in /home/munawwar/public_html/dev7/administrator/components/com_easysocial/includes/image/adapters/asido/class.driver.php on line 593
+[06-Oct-2018 02:08:28 CST6CDT] PHP Warning:  Failed to initialize image operations in /home/munawwar/public_html/dev7/administrator/components/com_easysocial/includes/image/adapters/asido/class.image.php on line 208
+[06-Oct-2018 02:08:28 CST6CDT] PHP Warning:  Unable to open source image in /home/munawwar/public_html/dev7/administrator/components/com_easysocial/includes/image/adapters/asido/class.driver.php on line 593
+[06-Oct-2018 02:08:28 CST6CDT] PHP Warning:  Failed to initialize image operations in /home/munawwar/public_html/dev7/administrator/components/com_easysocial/includes/image/adapters/asido/class.image.php on line 208
+[06-Oct-2018 02:08:28 CST6CDT] PHP Warning:  Unable to open source image in /home/munawwar/public_html/dev7/administrator/components/com_easysocial/includes/image/adapters/asido/class.driver.php on line 593
+[06-Oct-2018 02:08:28 CST6CDT] PHP Warning:  Failed to initialize image operations in /home/munawwar/public_html/dev7/administrator/components/com_easysocial/includes/image/adapters/asido/class.image.php on line 208
+[13-Oct-2018 23:58:02 CST6CDT] CSRF state token does not match one provided.
+[14-Oct-2018 00:03:05 CST6CDT] CSRF state token does not match one provided.
+[14-Oct-2018 00:03:30 CST6CDT] CSRF state token does not match one provided.
+[14-Oct-2018 00:03:39 CST6CDT] CSRF state token does not match one provided.
+[14-Oct-2018 06:47:57 CST6CDT] CSRF state token does not match one provided.
+[14-Oct-2018 06:55:32 CST6CDT] CSRF state token does not match one provided.
+[14-Oct-2018 07:07:10 CST6CDT] CSRF state token does not match one provided.
+[14-Oct-2018 07:15:34 CST6CDT] CSRF state token does not match one provided.
+[15-Oct-2018 03:34:45 CST6CDT] CSRF state token does not match one provided.
+[15-Oct-2018 08:53:40 CST6CDT] CSRF state token does not match one provided.
+[15-Oct-2018 09:18:14 CST6CDT] CSRF state token does not match one provided.
+[15-Oct-2018 09:18:14 CST6CDT] CSRF state token does not match one provided.
+[15-Oct-2018 09:29:03 CST6CDT] CSRF state token does not match one provided.
+[15-Oct-2018 09:41:27 CST6CDT] CSRF state token does not match one provided.
+[16-Oct-2018 23:12:51 CST6CDT] CSRF state token does not match one provided.
+[18-Oct-2018 02:22:40 CST6CDT] CSRF state token does not match one provided.
+[18-Oct-2018 02:22:40 CST6CDT] CSRF state token does not match one provided.
+[18-Oct-2018 02:59:48 CST6CDT] CSRF state token does not match one provided.
+[18-Oct-2018 03:08:24 CST6CDT] CSRF state token does not match one provided.
+[18-Oct-2018 03:20:23 CST6CDT] CSRF state token does not match one provided.
+[18-Oct-2018 03:52:31 CST6CDT] CSRF state token does not match one provided.
+[18-Oct-2018 03:52:32 CST6CDT] CSRF state token does not match one provided.
+[18-Oct-2018 18:24:26 CST6CDT] CSRF state token does not match one provided.
+[18-Oct-2018 18:26:07 CST6CDT] CSRF state token does not match one provided.
+[19-Oct-2018 10:38:07 CST6CDT] CSRF state token does not match one provided.
+[19-Oct-2018 10:39:56 CST6CDT] CSRF state token does not match one provided.
+[19-Oct-2018 10:45:34 CST6CDT] CSRF state token does not match one provided.
+[20-Oct-2018 04:35:12 CST6CDT] CSRF state token does not match one provided.
+[21-Oct-2018 01:59:39 CST6CDT] CSRF state token does not match one provided.
+[21-Oct-2018 21:45:42 CST6CDT] CSRF state token does not match one provided.
+[21-Oct-2018 23:09:37 CST6CDT] CSRF state token does not match one provided.
+[22-Oct-2018 07:58:12 CST6CDT] CSRF state token does not match one provided.

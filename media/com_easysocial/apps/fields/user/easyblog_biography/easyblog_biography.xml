@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<social type="fields" group="user">
+	<name>EasyBlog Biography</name>
+	<element>easyblog_biography</element>
+	<author>Stack Ideas Sdn Bhd</author>
+	<url>http://stackideas.com</url>
+	<created>2nd November 2016</created>
+	<version>2.0.0</version>
+	<copyright>Copyright (C) 2010 - 2016 Stack Ideas Sdn Bhd</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<icon>icon-field-easyblog</icon>
+	<unique>true</unique>
+	<description>
+		<![CDATA[PLG_FIELDS_USER_EASYBLOG_BIO]]>
+	</description>
+	<core>false</core>
+	<files>
+		<folder>config</folder>
+		<folder>scripts</folder>
+		<folder>themes</folder>
+		<file>easyblog_biography.php</file>
+		<file>easyblog_biography.xml</file>
+	</files>
+	<languages>
+		<language type="en-GB">en-GB.plg_fields_user_easyblog_biography.ini</language>
+	</languages>
+	<updates>
+		<version>http://stackideas.com/updater/easysocial/fields/version</version>
+		<patch>http://stackideas.com/updater/easysocial/fields/patch</patch>
+	</updates>
+</social>

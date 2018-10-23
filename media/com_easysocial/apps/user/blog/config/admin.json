@@ -1,0 +1,145 @@
+[
+	{
+		"title": "APP_USER_BLOG_STORY_FORM",
+		"desc": "APP_USER_BLOG_STORY_FORM_DESC",
+		"fields": [
+			{
+				"label": "APP_USER_BLOG_ALLOW_BLOG_CREATION",
+				"tooltip": "APP_USER_BLOG_ALLOW_BLOG_CREATION_DESC",
+				"name": "blog_form",
+				"type": "boolean",
+				"default": 1
+			}
+		]
+	},
+	{
+		"title"		: "APP_USER_BLOG_STREAM_SETTINGS",
+		"desc"		: "APP_USER_BLOG_STREAM_SETTINGS_DESC",
+		"fields"	:
+		[
+			{
+				"label"		: "APP_USER_BLOG_STREAM_CONTENT_LENGTH",
+				"tooltip"	: "APP_USER_BLOG_STREAM_CONTENT_LENGTH_DESC",
+				"name"		: "maxlength",
+				"class"		: "input-mini center",
+				"type"		: "text",
+				"default"	: 0
+			},
+			{
+				"label"		: "APP_USER_BLOG_STREAM_CONTENT_TRUNCATION_TYPE",
+				"tooltip"	: "APP_USER_BLOG_STREAM_CONTENT_TRUNCATION_TYPE_DESC",
+				"name"		: "truncation",
+				"type"		: "select",
+				"default"	: "chars",
+				"options"	:
+				[
+					{
+						"title"	: "APP_USER_BLOG_STREAM_TRUNCATION_CHARACTERS",
+						"value"	: "chars"
+					},
+					{
+						"title"	: "APP_USER_BLOG_STREAM_TRUNCATION_WORDS",
+						"value"	: "words"
+					}
+				]
+			},
+			{
+				"label"		: "APP_USER_BLOG_STREAM_IMAGE_ALIGNMENT",
+				"tooltip"	: "APP_USER_BLOG_STREAM_IMAGE_ALIGNMENT_DESC",
+				"name"		: "imagealignment",
+				"type"		: "select",
+				"default"	: "right",
+				"options"	:
+				[
+					{
+						"title"	: "APP_USER_BLOG_STREAM_IMAGE_ALIGN_LEFT",
+						"value"	: "left"
+					},
+					{
+						"title"	: "APP_USER_BLOG_STREAM_IMAGE_ALIGN_RIGHT",
+						"value"	: "right"
+					}
+				]
+			},
+			{
+				"label": "APP_USER_BLOG_STREAM_UPDATES",
+				"tooltip": "APP_USER_BLOG_STREAM_UPDATES_DESC",
+				"name": "stream_updates",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_USER_BLOG_STREAM_CREATE",
+				"tooltip": "APP_USER_BLOG_STREAM_CREATE_DESC",
+				"name": "stream_create",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_USER_BLOG_STREAM_COMMENTS",
+				"tooltip": "APP_USER_BLOG_STREAM_COMMENTS_DESC",
+				"name": "stream_comments",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_USER_BLOG_STREAM_FEATURED",
+				"tooltip": "APP_USER_BLOG_STREAM_FEATURED_DESC",
+				"name": "stream_featured",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_USER_BLOG_STREAM_REACTION",
+				"tooltip": "APP_USER_BLOG_STREAM_REACTION_DESC",
+				"name": "stream_reaction",
+				"type": "boolean",
+				"default": true
+			}
+		]
+	},
+	{
+		"title"		: "APP_USER_BLOG_PROFILE_SETTINGS",
+		"desc"		: "APP_USER_BLOG_PROFILE_SETTINGS_DESC",
+		"fields"	:
+		[
+			{
+				"label": "APP_USER_BLOG_PROFILE_INCLUDE_TEAMBLOG",
+				"tooltip": "APP_USER_BLOG_PROFILE_INCLUDE_TEAMBLOG_DESC",
+				"name": "include_team",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_USER_BLOG_PROFILE_SHOW_PLACEHOLDER",
+				"tooltip": "APP_USER_BLOG_PROFILE_SHOW_PLACEHOLDER_DESC",
+				"name": "show_placeholder",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_USER_BLOG_TOTAL_BLOGS_DISPLAY",
+				"tooltip": "APP_USER_BLOG_TOTAL_BLOGS_DISPLAY_DESC",
+				"name": "total",
+				"class": "input-mini center",
+				"type": "text",
+				"default": 5
+			},
+			{
+				"label": "APP_USER_BLOG_PROFILE_CONTENT_LENGTH_DISPLAY",
+				"tooltip": "APP_USER_BLOG_PROFILE_CONTENT_LENGTH_DISPLAY_DESC",
+				"name": "profile_maxlength",
+				"class": "input-mini center",
+				"type": "text",
+				"default": 250
+			},
+			{
+				"label": "APP_USER_BLOG_PROFILE_ACTIVATE_PLUGINS",
+				"tooltip": "APP_USER_BLOG_PROFILE_ACTIVATE_PLUGINS_DESC",
+				"name": "activate_plugin",
+				"type": "boolean",
+				"default": false
+			}
+		]
+	}
+]

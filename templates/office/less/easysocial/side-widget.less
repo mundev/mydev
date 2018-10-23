@@ -1,0 +1,41 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+// Side widget
+// ----------------
+
+// Side widget
+// ----------------
+.es-side-widget {
+	&__title { // same styling with sp-module-title
+		margin: 0 0 20px;
+		font-size: 12px;
+		text-transform: uppercase;
+		line-height: 1;
+		font-weight: normal;
+	}
+}
+.es-sidebar {
+	.es-side-widget {
+		.o-tabs__link {
+			margin-right: -@si-base-spacing;
+			padding-top: @si-base-spacing--xs;
+			padding-bottom: @si-base-spacing--xs;
+		}
+	}
+	.o-tabs--stacked {
+		.o-tabs__item {
+			border-right: 0;
+			// margin-bottom: @si-base-spacing--sm;
+			&.active {
+				> .o-tabs__link {
+					border-right-width: 4px;			
+				}
+			}	
+		}	
+	}
+	
+}

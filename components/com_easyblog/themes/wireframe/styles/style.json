@@ -1,0 +1,36 @@
+{
+	"style": [
+		"foundry-light",
+		"reset",
+		"component-light",
+		"document",
+		"blocks",
+		"layout",
+		"side-menu",
+		"search",
+		"brand",
+		"toolbar",
+		"featured",
+		"bloggers",
+		"entry",
+		"categories",
+		"comments",
+		"tags",
+		"login",
+		"dashboard",
+		"magazine",
+		"grid",
+		"modules",
+		"patch"
+	],
+
+	"composer": [
+		"foundry",
+		"reset",
+		"newcore",
+		"document",
+		"component",
+		"composer-style",
+		"newcomponents"
+	]
+}

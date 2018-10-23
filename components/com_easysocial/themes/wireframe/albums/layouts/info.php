@@ -1,0 +1,46 @@
+<?php
+/**
+* @package		EasySocial
+* @copyright	Copyright (C) 2010 - 2016 Stack Ideas Sdn Bhd. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* EasySocial is free software. This version may have been modified pursuant
+* to the GNU General Public License, and as distributed it includes or
+* is derivative of works licensed under the GNU General Public License or
+* other free or open source software licenses.
+* See COPYRIGHT.php for copyright notices and details.
+*/
+defined('_JEXEC') or die('Unauthorized Access');
+?>
+<div data-album-info class="es-media-info es-album-info">
+	<h1 data-album-title class="es-media-title es-album-title">
+		<a href="<?php echo $album->getPermalink();?>" data-album-view-button><?php echo $album->_('title'); ?></a>
+	</h1>
+	<?php if ($options['view'] != 'all') { ?>
+	<div data-album-caption class="es-media-caption es-album-caption">
+		<?php echo $this->html('string.truncater', $album->_('caption'), 250); ?>
+	</div>
+	<?php } ?>
+
+	<small>
+		<?php if ($options['view'] == 'all') { ?>
+			<span class="es-album-author mr-5">
+				<i class="fa fa-user"></i>&nbsp; <?php echo JText::sprintf('COM_EASYSOCIAL_ALBUMS_CREATED_BY', $this->html( 'html.user', $album->user_id, true)); ?>
+			</span>
+		<?php } ?>
+
+		<?php if ($album->hasDate()) { ?>
+			<span data-album-date class="es-album-date"><i class="fa fa-calendar"></i> <?php echo $this->html( 'string.date' , $album->getAssignedDate() , "COM_EASYSOCIAL_ALBUMS_DATE_FORMAT",  $album->hasAssignedDate() ? false : true); ?></span>
+		<?php } ?>
+
+		<?php if ($album->location && $this->config->get('photos.location')) { ?>
+			<span data-album-location class="es-album-location">
+				<?php echo JText::_("COM_EASYSOCIAL_ALBUMS_TAKEN_AT"); ?>
+				<u data-popbox="module://easysocial/locations/popbox" data-lat="<?php echo $album->location->latitude; ?>"
+				data-lng="<?php echo $album->location->longitude; ?>">
+					<a href="//maps.google.com/?q=<?php echo $album->location->latitude; ?>,<?php echo $album->location->longitude; ?>" target="_blank"><?php echo $album->location->getAddress(); ?></a>
+				</u>
+			</span>
+		<?php } ?>
+	</small>
+	
+</div>

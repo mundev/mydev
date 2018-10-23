@@ -1,0 +1,37 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+// Bleeding not apply to albums due to it is es-card
+&.layout-form,
+&.layout-item {
+	.es-album-browser-content
+	// .es-media-header 
+	{
+		margin-left: -@si-base-spacing;
+		margin-right: -@si-base-spacing;
+		margin-bottom: -@si-base-spacing;
+	}	
+}
+
+.es-album-header__o-media,
+.es-media-info.es-album-info
+ {
+	padding-left: @si-base-spacing;
+	padding-right: @si-base-spacing;
+}
+
+&:not(.is-mobile) .es-media-item-menu {
+	right: @si-base-spacing;
+}
+.es-album-form {
+	margin-left: @si-base-spacing;
+}
+&.is-mobile {
+	.es-album-taglist {
+		padding-left: @si-base-spacing;
+		padding-right: @si-base-spacing;
+	}
+}

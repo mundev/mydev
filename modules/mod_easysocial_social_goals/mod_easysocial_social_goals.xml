@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="module" client="site" method="upgrade">
+    <name>EasySocial Social Goals</name>
+    <author>Stack Ideas Sdn Bhd</author>
+    <creationDate>13th September 2016</creationDate>
+    <copyright>Copyright (C) 2009 - 2016 Stack Ideas Sdn Bhd. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>support@stackideas.com</authorEmail>
+    <authorUrl>http://stackideas.com</authorUrl>
+    <version>2.0.0</version>
+    <description><![CDATA[MOD_EASYSOCIAL_SOCIAL_GOALS_DESC]]></description>
+    <files>
+		<folder>tmpl</folder>
+		<filename module="mod_easysocial_social_goals">mod_easysocial_social_goals.php</filename>
+		<filename>mod_easysocial_social_goals.xml</filename>
+	</files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_easysocial_social_goals.ini</language>
+        <language tag="en-GB">en-GB.mod_easysocial_social_goals.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params" addfieldpath="/administrator/components/com_easysocial/models/fields">
+            <fieldset name="basic">
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field name="moduleclass_sfx" type="textarea" rows="3" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

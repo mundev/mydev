@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="ajax" method="upgrade">
+	<name>Office Helix3 - Ajax</name>
+	<author>Stack Ideas Sdn Bhd </author>
+    <creationDate>Sep 2017</creationDate>
+    <copyright>Copyright (C) 2010 - 2017 StackIdeas.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later</license>
+    <authorEmail>support@stackideas.com</authorEmail>
+    <authorUrl>https://www.stackideas.com</authorUrl>
+    <version>2.2</version>
+    <description>Office Helix3 Framework - Joomla Template Framework by Stack Ideas</description>
+
+	<files>
+        <filename plugin="officehelix3">officehelix3.php</filename>
+		<folder>classes/</folder>
+	</files>
+</extension>

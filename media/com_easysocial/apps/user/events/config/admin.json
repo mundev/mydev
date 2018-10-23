@@ -1,0 +1,61 @@
+[
+	{
+		"title": "APP_USER_EVENTS_SETTINGS_STORY",
+		"desc": "APP_USER_EVENTS_SETTINGS_STORY_DESC",
+		"fields":
+		[
+			{
+				"label": "APP_USER_EVENTS_SETTINGS_STORY_CREATE_EVENT",
+				"tooltip": "APP_USER_EVENTS_SETTINGS_STORY_CREATE_EVENT_DESC",
+				"name": "story_event",
+				"type": "boolean",
+				"default": true
+			}
+		]
+	},
+	{
+		"title": "APP_USER_EVENTS_SETTINGS_WIDGETS",
+		"desc": "APP_USER_EVENTS_SETTINGS_WIDGETS_DESC",
+		"fields":
+		[
+			{
+				"label": "APP_USER_EVENTS_SETTINGS_WIDGETS_PROFILE",
+				"tooltip": "APP_USER_EVENTS_SETTINGS_WIDGETS_PROFILE_DESC",
+				"name": "widget_profile",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_USER_EVENTS_SETTINGS_WIDGETS_PROFILE_TOTAL",
+				"tooltip": "APP_USER_EVENTS_SETTINGS_WIDGETS_PROFILE_TOTAL_DESC",
+				"name": "widget_profile_total",
+				"type": "text",
+				"default": 5,
+				"class": "input-mini text-center"
+			},
+			{
+				"label": "APP_USER_EVENTS_SETTINGS_WIDGETS_DASHBOARD",
+				"tooltip": "APP_USER_EVENTS_SETTINGS_WIDGETS_DASHBOARD_DESC",
+				"name": "widget_dashboard",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_USER_EVENTS_SETTINGS_WIDGETS_DASHBOARD_DAYS",
+				"tooltip": "APP_USER_EVENTS_SETTINGS_WIDGETS_DASHBOARD_DAYS_DESC",
+				"name": "widget_dashboard_days",
+				"type": "text",
+				"default": 7,
+				"class": "input-mini text-center"
+			},
+			{
+				"label": "APP_USER_EVENTS_SETTINGS_WIDGETS_DASHBOARD_TOTAL",
+				"tooltip": "APP_USER_EVENTS_SETTINGS_WIDGETS_DASHBOARD_TOTAL_DESC",
+				"name": "widget_dashboard_total",
+				"type": "text",
+				"default": 5,
+				"class": "input-mini text-center"
+			}
+		]
+	}
+]

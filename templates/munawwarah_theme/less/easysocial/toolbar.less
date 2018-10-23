@@ -1,0 +1,56 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+// Toolbar
+// ----------------
+
+body {
+	#es {
+		.es-navbar__footer {
+			background-color: @si-bg-toolbar;
+			text-align: center;
+			border-top-color: @si-border-toolbar-color;
+			border-bottom-color: @si-border-toolbar-color;
+			border-left-color: @si-border-toolbar-color--none;
+			border-right-color: @si-border-toolbar-color--none;
+		}
+		&.is-mobile {
+			.es-navbar__toggle {
+				display: inline-block;
+				border: 1px solid @si-ui-border-color;
+				width: 100%;
+				text-align: center;
+				border-top-color: @si-border-toolbar-color;
+				border-bottom-color: @si-border-toolbar-color;
+				border-left-color: @si-border-toolbar-color--none;
+				border-right-color: @si-border-toolbar-color--none;
+				padding: @si-base-spacing--sm @si-base-spacing;
+				
+				&-link {
+					color: #666666;
+					text-align: center;
+				}
+			}
+		}
+		.es-navbar__toggle {
+			display: none;
+		}
+		.es-navbar__footer {
+			.es-navbar__footer-submenu {
+				> :not(:first-child) {
+					border-left-color: @si-border-toolbar-color--none;
+				}
+			}
+		}
+		.es-navbar__footer-submenu {
+			> li.is-active {
+				> .es-navbar__footer-link {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

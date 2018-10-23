@@ -1,0 +1,74 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+body #ed .btn-default,
+body #ed .btn-default:hover,
+body #ed .btn-default:focus,
+body #ed .btn-default:active,
+body #ed .btn-default.active,  
+#ed .o-tabs--ed .o-tabs__link,
+body #ed .ed-page-title,
+body #ed .btn-link,
+body #ed .btn-link:hover,
+body #ed .btn-link:focus,
+body #ed .btn-link:active  {
+	color: @major_color !important;	
+}
+
+body #ed .btn-primary {
+	color: #fff !important;
+	background-color: @major_color !important;
+	border-color: darken(@major_color, 6%) !important;
+}
+
+body #ed .btn-primary:hover, 
+body #ed .btn-primary:focus, 
+body #ed .btn-primary:active,
+body #ed .btn-primary:active:focus,
+body #ed .btn-primary.active {
+	color: #fff !important;
+	background-color: darken(@major_color, 6%) !important;
+	border-color: darken(@major_color, 6%) !important;
+}
+
+body #ed .btn {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.42857;
+}
+
+body .ed-dialog-footer-content .btn-primary:hover {
+	color: @major_color !important;
+}
+
+#ed .is-active .ed-navbar__footer-link::before {
+	background-color: transparent !important;
+}
+
+#ed .ed-noti-hd__badge {
+	background-color: @major_color !important;
+}
+
+#ed .ed-navbar__footer-link {
+	color: @text_color !important;
+}
+
+#ed .is-active > .ed-navbar__footer-link, 
+#ed .ed-navbar__footer-link:hover {
+	color: @major_color !important;
+}
+ 
+#ed .o-tabs--ed .o-tabs__link:hover {
+	color: darken(@major_color, 6%) !important;
+}
+
+#ed .o-tabs--ed .active .o-tabs__link {
+	border-color: @major_color;
+}
+
+body #ed .ed-profile-container__side-nav > li.active {
+	border-color: @active_color;
+}

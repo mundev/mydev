@@ -1,0 +1,123 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+.si-login-page { //<body>
+	height: 100%;
+	// background-color: #DDE5E9;
+
+	&:not(.is-mobile) .body-innerwrapper,
+	#sp-office-login,
+	#sp-officelogin,
+	.si-module-wrapper,
+	#es.es-main,
+	.si-login-wrapper.is-full-width { // .is-full-width lock down mode
+		height: 100%;
+	}
+	&:not(.is-mobile) #sp-office-login {
+		height: calc(~"100vh - 56px - 64px"); // minus top bottom bar
+	}
+
+	// This footer only display for com_users
+	&.com-users.is-mobile {
+		#sp-footer {
+			position: fixed;
+			bottom: 0;
+		}	
+	}
+	
+}
+
+body.layout-forgetPassword #es,
+body.layout-forgetUsername #es, // Enforce forget pages to use minimalist design
+body.is-login-minimalist #es {
+	#es .es-login-social-container {
+		.flex-flow(row);
+	}
+	&.mod-es-logbox {
+		height: 100%;
+	}
+
+	.si-login-wrapper {
+		.flex-display(flex);
+		.justify-content(center);
+		.align-items(flex-start);
+		height: 100%;
+		// padding: @si-base-spacing 0;
+	}
+	.si-login {
+		min-width: 320px;
+		max-width: 480px;
+		@media (min-width: @screen-sm) {
+			min-width: 480px;
+			max-width: 600px;
+		}
+		&__hd {
+			text-align: center;
+			padding: @si-base-spacing;
+		}
+		&__bd {
+			background-color: #fff;
+		}
+		&__ft {
+			text-align: center;
+			padding: 40px @si-base-spacing @si-base-spacing;
+		}
+		&__logo {
+			margin-bottom: @si-base-spacing--sm;
+		}
+		&__logo-img {
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 80px;
+		}
+		&__form {
+			
+			
+		}
+		&__form-title {
+			text-align: center;	
+		}
+		&__form-desc {
+			text-align: left;
+		}
+		&__social-txt {
+			padding: @si-base-spacing 0;
+		}
+		&__social {
+			text-align: center;
+			padding: @si-base-spacing 48px;
+			background-color: @si-bg-shade;
+			.btn {
+				span {
+					display: none; // hide btn text
+				}
+			}
+		}
+		&__fields {
+			padding: 40px;
+		}
+		&__forgot {
+			position: absolute;
+			top: 0;
+			right: 0;
+			color: @si-meta-color;
+		}
+	}
+
+	&.is-mobile {
+		.si-login {
+			&__fields {
+				padding: 24px;
+			}
+		}
+		.es-login-social-container {
+			.flex-flow(column);
+		}
+	}
+
+}
+

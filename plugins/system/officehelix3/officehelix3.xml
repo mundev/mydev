@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="system" method="upgrade">
+	<name>System - Office Helix3 Framework</name>
+	<author>Stack Ideas Sdn Bhd </author>
+	<creationDate>Sep 2017</creationDate>
+	<copyright>Copyright (C) 2010 - 2017 StackIdeas.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later</license>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://www.stackideas.com</authorUrl>
+	<version>2.2</version>
+	<description>Office Helix3 Framework - Joomla Template Framework by Stack Ideas</description>
+
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_system_officehelix3.ini</language>
+	</languages>
+
+	<files>
+		<filename plugin="officehelix3">officehelix3.php</filename>
+		<folder plugin="officehelix3">assets</folder>
+		<folder plugin="officehelix3">core</folder>
+		<folder plugin="officehelix3">language</folder>
+		<folder plugin="officehelix3">fields</folder>
+		<folder plugin="officehelix3">layout</folder>
+		<folder plugin="officehelix3">layouts</folder>
+		<folder plugin="officehelix3">params</folder>
+	</files>
+	<fieldset addfieldpath="/plugins/system/officehelix3/fields"></fieldset>
+</extension>

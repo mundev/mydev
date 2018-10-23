@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<social type="apps" group="user">
+	<name>Discuss</name>
+	<element>discuss</element>
+	<author>Stack Ideas Sdn Bhd</author>
+	<url>https://stackideas.com</url>
+	<creationDate>6th July 2018</creationDate>
+	<version>2.1.5</version>
+	<copyright>Copyright (C) 2010 - 2016 Stack Ideas Sdn Bhd</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<installable>true</installable>
+	<core>false</core>
+	<widget>false</widget>
+	<system>false</system>
+	<views>
+		<view type="embed">profile</view>
+	</views>
+	<description><![CDATA[APP_EASYDISCUSS_APP_DESCRIPTION]]></description>
+	<files>
+		<folder>config</folder>
+		<folder>controllers</folder>
+		<folder>gdpr</folder>
+		<folder>themes</folder>
+		<folder>views</folder>
+		<file>discuss.php</file>
+		<file>discuss.xml</file>
+		<file>helper.php</file>
+		<sql>install.sql</sql>
+		<file>panel.form.js</file>
+		<file>story.js</file>
+	</files>
+	<languages>
+		<language type="en-GB">en-GB.plg_app_user_discuss.ini</language>
+	</languages>
+	<updates>
+		<version>2.1.5</version>
+		<patch>http://stackideas.com/updater/easysocial/apps/patch</patch>
+	</updates>
+</social>

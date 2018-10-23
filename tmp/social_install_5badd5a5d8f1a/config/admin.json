@@ -1,0 +1,76 @@
+[
+	{
+		"title": "API Settings",
+		"fields":
+		[
+			{
+				"label": "APP_USER_ONESIGNAL_APP_ID",
+				"tooltip": "APP_USER_ONESIGNAL_APP_ID_DESC",
+				"name": "app_id",
+				"type": "text",
+				"default": ""
+			},
+			{
+				"label": "APP_USER_ONESIGNAL_REST_KEY",
+				"tooltip": "APP_USER_ONESIGNAL_REST_KEY_DESC",
+				"name": "rest_key",
+				"type": "text",
+				"default": ""
+			},
+			{
+				"label": "APP_USER_ONESIGNAL_SAFARI_ID",
+				"tooltip": "APP_USER_ONESIGNAL_SAFARI_ID_DESC",
+				"name": "safari_id",
+				"type": "text",
+				"default": ""
+			},
+			{
+				"label": "APP_USER_ONESIGNAL_CUSTOM_SUBDOMAIN",
+				"tooltip": "APP_USER_ONESIGNAL_CUSTOM_SUBDOMAIN_DESC",
+				"name": "subdomain",
+				"type": "text"
+			},
+			{
+				"label": "APP_USER_ONESIGNAL_CUSTOM_AUTOREGISTER",
+				"tooltip": "APP_USER_ONESIGNAL_CUSTOM_AUTOREGISTER_DESC",
+				"name": "autoregister",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_USER_ONESIGNAL_SHOW_WELCOME",
+				"tooltip": "APP_USER_ONESIGNAL_SHOW_WELCOME_DESC",
+				"name": "show_welcome",
+				"type": "boolean",
+				"default": true
+			}
+		]
+	},
+	{
+		"title": "Features",
+		"fields":
+		[
+			{
+				"label": "APP_USER_ONESIGNAL_PUSH_FRIENDS",
+				"tooltip": "APP_USER_ONESIGNAL_PUSH_FRIENDS_DESC",
+				"name": "push_friends",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_USER_ONESIGNAL_PUSH_MESSAGES",
+				"tooltip": "APP_USER_ONESIGNAL_PUSH_MESSAGES_DESC",
+				"name": "push_messages",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_USER_ONESIGNAL_PUSH_NOTIFICATIONS",
+				"tooltip": "APP_USER_ONESIGNAL_PUSH_NOTIFICATIONS_DESC",
+				"name": "push_notifications",
+				"type": "boolean",
+				"default": true
+			}
+		]
+	}
+]

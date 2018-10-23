@@ -1,0 +1,8 @@
+{
+    "title": "COM_ES_REACTIONS",
+    "link": "index.php?option=com_easysocial&view=reactions",
+    "class": "fa-smile-o",
+    "access": "easysocial.access.reactions",
+    "view": "reactions",
+    "active": "layout"
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<social type="fields" group="page">
+	<name>Hours</name>
+	<element>hours</element>
+	<author>Stack Ideas Sdn Bhd</author>
+	<url>http://stackideas.com</url>
+	<created>24th October 2017</created>
+	<version>2.1.1</version>
+	<copyright>Copyright (c) 2009 - 2017 Stack Ideas Sdn. Bhd.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description><![CDATA[COM_EASYSOCIAL_APP_FIELDS_PAGE_HOURS_INFO]]></description>
+	<core>false</core>
+	<unique>true</unique>
+	<files>
+		<folder>config</folder>
+		<folder>themes</folder>
+		<folder>widgets</folder>
+		<file>hours.php</file>
+		<file>hours.xml</file>
+	</files>
+</social>

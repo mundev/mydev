@@ -1,0 +1,18 @@
+{
+	"title": {
+		"default": "PLG_FIELDS_USER_EASYBLOG_BIO_DEFAULT_TITLE"
+	},
+
+	"description": {
+		"default": "PLG_FIELDS_USER_EASYBLOG_BIO_DEFAULT_DESC"
+	},
+
+    "editor": {
+        "label": "PLG_FIELDS_USER_EASYBLOG_BIO_EDITOR_TITLE",
+        "type": "editors",
+        "default": "none"
+    },	
+
+	"default": false,
+	"visible_display": true
+}

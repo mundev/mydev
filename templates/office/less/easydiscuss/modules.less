@@ -1,0 +1,35 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+
+body #ed {
+	&.ed-mod *, 
+	.ed-mod * {
+		line-height: 1.6;
+	}
+	.m-post-title {
+		font-weight: bold;
+	}
+	
+	&.m-recent-discussions {
+		// The only o-nav for tags
+		.o-nav {
+			margin-top: @si-base-spacing--sm;
+		}
+		.ed-mod__section {
+			padding-top: 0;
+		}
+		
+	}
+	.has-dividers--bottom-space > .ed-list__item:first-child {
+		padding-top: 0;
+	}
+	.has-dividers--bottom-space > .ed-list__item:not(:first-child) {
+		padding: @si-base-spacing 0;
+	}
+	
+}
+#ed.m-recent-discussions 

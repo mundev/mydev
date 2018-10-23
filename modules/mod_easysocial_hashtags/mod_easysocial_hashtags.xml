@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="module" client="site" method="upgrade">
+	<name>EasySocial Hashtags</name>
+	<author>Stack Ideas Sdn Bhd</author>
+	<creationDate>7th September 2018</creationDate>
+	<copyright>Copyright (C) 2009 - 2018 Stack Ideas Sdn Bhd. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>http://stackideas.com</authorUrl>
+	<version>2.2.7</version>
+	<description><![CDATA[MOD_EASYSOCIAL_HASHTAGS_DESC]]></description>
+	<files>
+		<folder>tmpl</folder>
+		<filename module="mod_easysocial_hashtags">mod_easysocial_hashtags.php</filename>
+		<filename>mod_easysocial_hashtags.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_easysocial_hashtags.ini</language>
+		<language tag="en-GB">en-GB.mod_easysocial_hashtags.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_easysocial/models/fields">
+				<field name="total" type="text" class="input-mini text-center" default="10" label="MOD_EASYSOCIAL_HASHTAGS_TOTAL_HASHTAGS" description="MOD_EASYSOCIAL_HASHTAGS_TOTAL_HASHTAGS_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

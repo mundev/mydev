@@ -1,0 +1,77 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+
+// Megamenu
+// ----------------
+.sp-megamenu-parent .sp-dropdown-mega .sp-dropdown-inner, 
+.sp-megamenu-parent .sp-module {
+	background: @si-bg;
+}
+
+body .sp-dropdown-mega #es, 
+body .offcanvas-menu #es {
+	&.mod-es-albums .mod-es-action, 
+	&.mod-es-videos .mod-es-action {
+		margin: @si-base-spacing--sm 0 0 0;
+	}
+	.mod-es-albums-item, 
+	&.mod-es-videos .mod-card {
+		margin: 0;
+	}
+	.mod-es-albums-item + .mod-es-albums-item, 
+	.mod-es-videos-item + .mod-es-videos-item {
+		margin-top: @si-base-spacing--sm;
+	}
+
+	.mod-es-leader-item {
+		margin: 0 -10px;
+		padding: 0 10px;
+
+		.es-leader-context {
+			margin-left: 0;
+		}
+	}
+	.mod-es-leader-item + .mod-es-leader-item {
+		margin-top: @si-base-spacing;
+		padding-top: @si-base-spacing;
+	}
+	.o-media-image {
+		margin-right: @si-base-spacing;
+	}
+}
+
+
+// Off-canvas
+// ----------------
+.offcanvas-menu .offcanvas-inner .sp-module {
+	margin-bottom: 0;
+	padding: 30px;
+	&:first-child {
+		margin-top: @si-base-spacing--lg;
+	}
+
+	+ .sp-module {
+		margin-top: 0;
+	}
+}
+
+
+// Alert
+// ----------------
+body .alert {
+	margin-bottom: @si-base-spacing--sm;
+}
+
+
+// Forms
+// ----------------
+.edit.item-page form, 
+#application-form {
+	background-color: @si-bg;
+	padding: @si-base-spacing--lg;
+	border: 1px solid @si-border-color;
+}

@@ -1,0 +1,17 @@
+[
+	{
+		"title"		: "APP_USER_BLOG_PROFILE",
+		"desc"		: "APP_USER_BLOG_PROFILE_DESC",
+		"fields"	:
+		[
+			{
+				"label"		: "APP_USER_BLOG_PROFILE_TOTAL_BLOGS_DISPLAY",
+				"tooltip"	: "APP_USER_BLOG_PROFILE_TOTAL_BLOGS_DISPLAY_DESC",
+				"name"		: "total",
+				"class"		: "input-mini center",
+				"type"		: "text",
+				"default"	: 5
+			}
+		]
+	}
+]

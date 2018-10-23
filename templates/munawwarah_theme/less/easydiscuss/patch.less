@@ -1,0 +1,305 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+
+/**
+* Elements / Blocks
+*/
+/**
+* Typo
+*/
+#ed {
+	font-family: @si-font-family;
+	line-height: inherit; // reset
+	-moz-osx-font-smoothing: unset; // reset
+	legend,
+	b {
+		font-weight: 500;
+	}
+
+	.ed-post-item__ft, 
+	.ed-statistic__item, 
+	.ed-statistic__item-count, 
+	.g-list-inline > li, 
+	.ed-post-meta-tag > li > a, 
+	.ed-user-rank, 
+	.ed-user-meta, 
+	.ed-vote__points, 
+	.ed-vote__text, 
+	// .o-label, 
+	.ed-forum__hd, 
+	.ed-forum__hd-thead, 
+	.ed-forum__ft,
+	.ed-tags-item > h2{
+		font-size: @si-font-size;
+	}
+}
+
+/**
+* Color
+*/
+#ed {
+	.ed-page-title, 
+	.ed-forum-item__col-avatar,
+	.ed-tags-item > h2,
+	.ed-badge__name {
+		color: @si-title-color;
+	}
+
+	&.view-index,
+	&.view-forums {
+		background-color: @si-bg-shade;
+	}
+}
+
+
+// Background /Shade
+// ----------------
+#ed {
+	.ed-page-title, 
+	.ed-post-item__ft, 
+	.ed-my-subscribe .ed-filter-bar, 
+	.ed-entry-action-bar, 
+	.ed-post-reply-bar, 
+	.ed-reply-item__hd, 
+	.ed-reply-item__bd, 
+	.ed-reply-item__comments-wrap, 
+	.ed-forum__hd, 
+	.is-featured.ed-forum-item, 
+	.ed-forum-item, 
+	.ed-forums-cat-header, 
+	.ed-subscribe,
+	.ed-dashboard,
+	.ed-dashboard-form,
+	.ed-tags-item > h2 {
+		background-color: @si-bg;
+	}
+	.o-pagination > .active > a, 
+	.o-pagination > .active > span, 
+	.o-pagination > .active > a:hover, 
+	.o-pagination > .active > span:hover, 
+	.o-pagination > .active > a:focus, 
+	.o-pagination > .active > span:focus, 
+	.ed-post-item__sub-hd, 
+	.ed-post-who-view__ft, 
+	.ed-reply-form__bd, 
+	.ed-reply-item__ft, 
+	.ed-forum-item:hover, 
+	.ed-forum__ft {
+		background-color: @si-bg-shade;
+	}
+}
+
+// Border Color
+// ----------------
+#ed {
+	
+	.ed-filter-bar, 
+	.ed-entry-action-bar, 
+	.ed-post-reply-bar, 
+	.ed-subscribe,
+	.ed-tags-item > h2 {
+		// border: 1px solid @si-border-color;
+	}
+	.ed-page-title {
+		border-top: 1px solid @si-border-color;
+		border-bottom: 1px solid @si-border-color;
+	}
+	 
+	.ed-post-item__hd, 
+	.o-pagination > .active > a, 
+	.o-pagination > .active > span, 
+	.o-pagination > .active > a:hover, 
+	.o-pagination > .active > span:hover, 
+	.o-pagination > .active > a:focus, 
+	.o-pagination > .active > span:focus, 
+	.o-pagination > .disabled > span, 
+	.o-pagination > .disabled > span:hover, 
+	.o-pagination > .disabled > span:focus, 
+	.o-pagination > .disabled > a, 
+	.o-pagination > .disabled > a:hover, 
+	.o-pagination > .disabled > a:focus, 
+	.ed-board-stats__hd, 
+	.ed-board-stats__bd, 
+	.ed-post-who-view__hd, 
+	.ed-post-who-view__ft, 
+	.ed-post-replies__empty, 
+	.ed-reply-form__bd, 
+	.ed-reply-item__hd, 
+	.ed-reply-item__ft, 
+	.ed-forum__hd, 
+	.ed-forum__ft, 
+	.ed-forums-cat-header, 
+	.ed-cat-panel, 
+	.o-empty--bordered,
+	.ed-badge,
+	.ed-user-profile,
+	.ed-ask__input-title {
+		border-color: @si-border-color;
+	}
+	.ed-reply-item__comments-wrap, 
+	.ed-forum-item + .ed-forum-item {
+		border-top-color: @si-border-color;
+	}
+	.has-body .ed-post-item__bd, 
+	.ed-post-item__ft, 
+	.ed-post-item__sub-hd, 
+	.ed-comment-item {
+		border-bottom-color: @si-border-color;
+	}
+
+	.ed-post-item__bd, 
+	.ed-post-item__ft, 
+	.ed-post-item__sub-hd, 
+	.ed-reply-item__bd, 
+	.ed-reply-item__comments-wrap, 
+	.ed-forum__bd {
+		border-left-color: @si-border-color;
+		border-right-color: @si-border-color;
+	}
+	.ed-xxx {
+		border-left-color: @si-border-color;
+	}
+	.ed-xxx {
+		border-right-color: @si-border-color;
+	}
+	.ed-post-who-view__hd {
+		border-top: 0 !important;
+	}
+	.ed-forum__hd,
+	.ed-forum__bd,
+	.ed-forum__ft,
+	.ed-post-who-view__hd,
+	.ed-post-who-view__ft,
+	.ed-post-item__sub-hd,
+	.ed-post-item__hd,
+	.ed-post-item__bd,
+	.ed-post-item__ft,
+	.ed-board-stats__hd,
+	.ed-board-stats__bd,
+	.ed-reply-form__bd,
+	.ed-cat-panel,
+	.ed-forums-cat-header,
+	.ed-ask__hd,
+	.ed-ask__bd,
+	.ed-ask__input-title,
+	.ed-reply-item__hd,
+	.ed-reply-item__bd,
+	.ed-reply-item__comments-wrap,
+	.ed-reply-item__ft,
+	.ed-post-replies__empty,
+	.ed-user-profile,
+	.ed-dashboard {
+		border-left: 0;
+		border-right: 0;
+		border-radius: 0;
+	}
+	.ed-statistic__item {
+		border: 0;
+		text-align: right;
+	}
+}
+
+// Spacing
+// ----------------
+#ed {
+	
+	.ed-post-who-view { // override trump margin styling
+		margin-top: 0 !important;
+		// margin-bottom: @si-base-spacing--lg !important;
+	}
+	.ed-post-replies > :not(:first-child), 
+	.ed-list > :not(:first-child) {
+		// margin-top: @si-base-spacing--lg;
+	}
+	.ed-page-title,
+	.ed-forums-cat-header,
+	.ed-tags-item > h2 { // override trump margin styling
+		margin-bottom: @si-base-spacing--lg !important;
+	}
+	
+	[data-user-search-form],
+	.ed-user-item {
+		margin-left: @si-base-spacing !important; // !important due to have inline styles
+		margin-right: @si-base-spacing !important;
+	}
+
+	// bleed
+	&.type-component,
+	.ed-reply-form__bd {
+		margin-left: -@si-base-spacing;
+		margin-right: -@si-base-spacing;
+	}
+	// Due to globally bleeding on #ed have to reset es profile header
+	> #es.is-mobile .es-profile-header:not(.es-profile-header--mini) {
+		margin: -@si-base-spacing 0 0 !important;
+	}
+	.ed-profile {
+		margin-bottom: -@si-base-spacing;
+	}
+}
+#ed {
+	
+	.ed-page-title {
+		padding: @si-base-spacing;
+	}
+
+	.ed-post-item__bd, 
+	.ed-post-item__ft
+	{
+		padding: @si-base-spacing--sm @si-base-spacing;
+	}
+	.ed-filter-bar {
+		// padding: @si-base-spacing--sm;
+	}
+	.ed-subscribe,
+	// .ed-post-replies-wrapper,
+	.ed-reply-form,
+	.ed-post-reply-bar,
+	.ed-entry-action-bar,
+	.ed-tags-item > h2,
+	.discuss-list .ed-filter-bar
+	 {
+		padding-left: @si-base-spacing;
+		padding-right: @si-base-spacing;
+	}
+	
+	
+}
+
+.ed-subscribe__icon {
+	width: 12px;
+}
+
+
+#ed .o-empty {
+	border: none !important;
+
+}
+
+
+#ed .ed-profile-container__side,
+#ed .ed-profile-container__content {
+	padding-bottom: 0;
+}
+#ed .ed-profile-container__content-bd {
+	padding-left: 0;
+}
+#ed .ed-profile-container__side {
+	border-right: 1px solid @si-border-color;
+}
+
+
+// #ED401
+#ed .ed-ask .chosen-container {
+	width: 100% !important;
+}
+
+// Mod Recent Discussion
+// -----------------------
+#ed.m-recent-discussions .has-dividers--bottom-space > .ed-list__item {
+	padding: 8px 0;
+}

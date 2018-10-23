@@ -1,0 +1,47 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+.es-stream-pinned-divider {
+	text-align: left;
+	padding: @si-base-spacing 0;
+	border-top: 1px solid @si-border-color;
+	// border-bottom: 1px solid @si-border-color;
+	margin-bottom: 0;
+	span {
+		&:before,
+		&:after {
+			display: none;
+		}	
+	}
+	
+}
+.es-stream-list {
+	~ .es-stream-pinned-divider {
+		// border-top: 1px solid @si-border-color;
+	}
+	> li {
+		border-top: 1px solid @si-border-color;
+		// margin-top: 16px;
+		padding-top: 16px;	
+	}
+}
+&.is-mobile {
+	.es-story-meta-buttons {
+		border-top: 1px solid @si-border-color;
+		border-bottom: 1px solid @si-border-color;
+		margin-top: @si-base-spacing--sm;
+		margin-left: -@si-base-spacing;
+		margin-right: -@si-base-spacing;
+	}
+	.es-story-meta-button.active {
+		// background-color: transparent !important;
+		color: @si-text-color;
+	}
+} 
+
+&.is-mobile .es-story-meta-button + .es-story-meta-button {
+	// border-left: 0;
+}

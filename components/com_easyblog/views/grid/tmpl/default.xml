@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_EASYBLOG_GRID_MENU_LAYOUT">
+		<message>
+			<![CDATA[COM_EASYBLOG_GRID_MENU_LAYOUT_DESC]]>
+		</message>
+		<view>grid</view>
+	</layout>
+	<state>
+		<name><![CDATA[COM_EASYBLOG_GRID_MENU_LAYOUT]]></name>
+		<description><![CDATA[COM_EASYBLOG_GRID_MENU_LAYOUT_DESC]]></description>
+	</state>
+
+	<fields name="params">
+
+		<fieldset name="showcase_grid_options" label="COM_EASYBLOG_GRID_SHOWCASE_MENU" addfieldpath="/administrator/components/com_easyblog/elements">
+			<field name="enable_showcase" type="radio" default="1" class="btn-group" label="COM_EASYBLOG_GRID_ENABLE_SHOWCASE" description="COM_EASYBLOG_GRID_ENABLE_SHOWCASE_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="showcase_auto_slide" type="radio" default="1" class="btn-group" label="COM_EASYBLOG_AUTO_SLIDE" description="COM_EASYBLOG_AUTO_SLIDE_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="showcase_grid_post_type" type="list" default="" class="btn-group" label="COM_EASYBLOG_GRID_SHOWCASE_POST_TYPE" description="COM_EASYBLOG_GRID_SHOWCASE_POST_TYPE_DESC">
+				<option value="latest">COM_EASYBLOG_SHOWCASE_LATEST_POST</option>
+				<option value="featured">COM_EASYBLOG_SHOWCASE_FEATURED_POST</option>
+			</field>
+			<field name="showcase_grid_showcase_category" type="multicategories" default="" label="COM_EASYBLOG_GRID_SHOWCASE_CATEGORY" description="COM_EASYBLOG_GRID_SHOWCASE_CATEGORY_DESC" />
+			<field name="showcase_grid_limit" type="list" default="1" class="btn-group" label="COM_EASYBLOG_GRID_SHOWCASE_LIMIT" description="COM_EASYBLOG_GRID_SHOWCASE_LIMIT_DESC">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</field>
+
+			<field name="showcase_auto_slide_interval" type="text" default="8" class="form-control input-mini text-center" label="COM_EASYBLOG_AUTO_SLIDE_INTERVAL" description="COM_EASYBLOG_AUTO_SLIDE_INTERVAL_DESC" />
+
+			<field name="showcase_content_limit" type="text" default="350" class="input-mini text-center" label="COM_EASYBLOG_GRID_CONTENT_LIMIT" description="COM_EASYBLOG_GRID_CONTENT_LIMIT_DESC" />
+
+			<field name="photo_show" type="radio" default="0" class="btn-group" label="COM_EASYBLOG_GRID_SHOWCASE_PHOTO_SHOW" description="COM_EASYBLOG_GRID_SHOWCASE_PHOTO_SHOW_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="authoravatar" type="radio" default="0" class="btn-group" label="COM_EASYBLOG_GRID_SHOWCASE_AUTHORAVATAR" description="COM_EASYBLOG_GRID_SHOWCASE_AUTHORAVATAR_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="contentauthor" type="radio" default="0" class="btn-group" label="COM_EASYBLOG_GRID_SHOWCASE_CONTENTAUTHOR" description="COM_EASYBLOG_GRID_SHOWCASE_CONTENTAUTHOR_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="category_show" type="radio" default="1" class="btn-group" label="COM_EASYBLOG_GRID_SHOWCASE_SHOW_CATEGORY" description="COM_EASYBLOG_GRID_SHOWCASE_SHOW_CATEGORY_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="contentdate" type="radio" default="0" class="btn-group" label="COM_EASYBLOG_GRID_SHOWCASE_CONTENTDATE" description="COM_EASYBLOG_GRID_SHOWCASE_CONTENTDATE_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="showreadmore" type="radio" default="0" class="btn-group" label="COM_EASYBLOG_GRID_SHOWCASE_SHOW_READMORE" description="COM_EASYBLOG_GRID_SHOWCASE_SHOW_READMORE_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+		</fieldset>
+
+		<fieldset name="grid_options" label="COM_EASYBLOG_GRID_OPTIONS" addfieldpath="/administrator/components/com_easyblog/elements">
+			<field name="grid_show_cover" type="radio" default="1" class="btn-group" label="COM_EASYBLOG_GRID_SHOW_COVER" description="COM_EASYBLOG_GRID_SHOW_COVER_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="grid_show_author" type="radio" default="1" class="btn-group" label="COM_EASYBLOG_GRID_SHOW_AUTHOR" description="COM_EASYBLOG_GRID_SHOW_AUTHOR_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="grid_show_category" type="radio" default="1" class="btn-group" label="COM_EASYBLOG_GRID_SHOW_CATEGORY" description="COM_EASYBLOG_GRID_SHOW_CATEGORY_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="grid_show_intro" type="radio" default="1" class="btn-group" label="COM_EB_GRID_SHOW_INTRO" description="COM_EB_GRID_SHOW_INTRO_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="grid_exclude_featured" type="radio" default="0" class="btn-group" label="COM_EASYBLOG_GRID_EXCLUDE_FEATURED_POSTS" description="COM_EASYBLOG_GRID_EXCLUDE_FEATURED_POSTS_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="grid_content_limit" type="text" default="350" class="input-mini text-center" label="COM_EASYBLOG_GRID_CONTENT_LIMIT" description="COM_EASYBLOG_GRID_CONTENT_LIMIT_DESC" />
+
+			<field name="grid_inclusion_authors" type="multiauthors" default="" label="COM_EASYBLOG_GRID_INCLUDE_ONLY_AUTHORS" description="COM_EASYBLOG_GRID_INCLUDE_ONLY_AUTHORS_HELP" />
+			<field name="grid_exclusion_authors" type="multiauthors" default="" label="COM_EASYBLOG_GRID_EXCLUDE_ONLY_AUTHORS" description="COM_EASYBLOG_GRID_EXCLUDE_ONLY_AUTHORS_HELP" />
+			<field name="grid_post_category" type="multicategories" default="" label="COM_EASYBLOG_GRID_POST_CATEGORIES" description="COM_EASYBLOG_GRID_POST_CATEGORIES_DESC" />
+
+			<field name="grid_layout" type="list" default="4" class="btn-group" label="COM_EASYBLOG_GRID_TOTAL_GRID" description="COM_EASYBLOG_GRID_TOTAL_GRID_DESC">
+				<option value="2">6</option>
+				<option value="3">4</option>
+				<option value="4">3</option>
+				<option value="6">2</option>
+			</field>
+
+			<field type="text" name="limit" default="10" label="COM_EASYBLOG_ITEMS_PER_PAGE" description="COM_EASYBLOG_ITEMS_PER_PAGE_DESC" />
+		</fieldset>
+	</fields>
+</metadata>

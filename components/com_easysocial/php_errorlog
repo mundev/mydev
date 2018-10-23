@@ -1,0 +1,80 @@
+[10-Oct-2018 15:55:50 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[11-Oct-2018 19:10:34 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[13-Oct-2018 12:58:12 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[14-Oct-2018 22:53:41 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[15-Oct-2018 17:33:36 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[15-Oct-2018 21:20:48 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[18-Oct-2018 03:19:38 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[18-Oct-2018 21:52:36 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[20-Oct-2018 14:06:24 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[20-Oct-2018 20:32:45 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[21-Oct-2018 07:37:26 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[22-Oct-2018 07:34:24 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[22-Oct-2018 07:34:25 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[22-Oct-2018 08:18:28 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[22-Oct-2018 18:39:03 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160
+[22-Oct-2018 18:39:04 CST6CDT] PHP Fatal error:  Uncaught Exception: Invalid method in /home/munawwar/public_html/components/com_easysocial/polling.php:160
+Stack trace:
+#0 /home/munawwar/public_html/components/com_easysocial/polling.php(660): EasySocialPolling->execute()
+#1 {main}
+  thrown in /home/munawwar/public_html/components/com_easysocial/polling.php on line 160

@@ -1,0 +1,80 @@
+[
+	{
+		"title": "Story",
+		"desc": "Configure story related settings for this application.",
+		"fields":
+		[
+			{
+				"label": "Allow Attachment",
+				"tooltip": "Determines if attachment is allowed when creating discussion in story form.",
+				"name": "story_attachment",
+				"type": "boolean",
+				"default": true
+			}
+		]
+	},
+	{
+		"title": "Stream",
+		"desc": "Configure stream related settings for this application.",
+		"fields":
+		[
+			{
+				"label": "New Discussions",
+				"tooltip": "Determines if posting new post would appear on the stream",
+				"name": "stream_create",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "Reply To Discussions",
+				"tooltip": "Determines if replying to a post would appear on the stream",
+				"name": "stream_reply",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "Likes On Discussion",
+				"tooltip": "Determines if likes on a post would appear on the stream",
+				"name": "stream_likes",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "Vote On Discussion",
+				"tooltip": "Determines if voting on a post would appear on the stream",
+				"name": "stream_vote",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "Display Comment Stream Items",
+				"tooltip": "Determines if posting a comment on a post would appear on the stream",
+				"name": "stream_comment",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "Convert Comment to Reply",
+				"tooltip": "Determines if posting a comment on a post would create a reply in discussion",
+				"name": "stream_comment_convert",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "Display Favorite Stream Items",
+				"tooltip": "Determines if favouriting a discussion would display on the stream",
+				"name": "stream_favourite",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "Max Characters (Stream Content)",
+				"tooltip": "Specify the numbers of recently created new posts of the user to display",
+				"name": "stream_max_chars",
+				"class": "input-mini center",
+				"type": "text",
+				"default": "250"
+			}
+		]
+	}
+]

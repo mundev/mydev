@@ -1,0 +1,347 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+
+// mod-es-search
+body #es.mod-es-search {
+	.o-form-control {
+		border: 1px solid transparent;
+		background: rgba(255,255,255,.1);
+		color: #fff;
+		.placeholder(#fefefe);
+		.box-shadow(none);
+	}
+	.o-input-group__btn:last-child {
+		> .btn {
+			border-left: 0;
+			// border-radius: @si-border-radius-none;
+		}
+		> .btn-es-default-o {
+			color: #fff !important;
+			border-color: transparent !important;
+			background: rgba(255,255,255,.1) !important;
+		}
+		.fa-cog:before {
+			content: "\f0b0";
+		}
+	}
+}
+
+
+// wrapper for mod-es-notification  + mod-es-dropdownmenu
+.es-top-mod-group {
+	// margin-bottom: @si-base-spacing--sm;
+	// float: right;
+	text-align: right;
+	.flex-display(flex);
+	.align-items(center);
+	.justify-content(flex-end);
+	width: 100%;
+	&__item {
+		// display: table-cell;
+		// display: inline-block;
+		// vertical-align: middle;
+		// text-align: center;
+	}
+}
+.office-logo {
+	> a {
+		.flex-display(flex);
+		color: #fff;
+		font-size: 20px; // in oder to same height with left side icons
+		line-height: 1;
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+.office-logo-img {
+	background-size: contain;
+	height: 40px;
+	width: 100px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	&.is-default {
+		display: inline-block;
+	}
+	&.is-retina {
+		display: none;
+	}
+}
+//Ratina Logo
+// @media (-webkit-min-device-pixel-ratio: 1.5), not all, not all, (min-resolution: 144dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.office-logo-img {
+		&.is-default {
+			display: none;
+		}
+		&.is-retina {
+			display: inline-block;
+		}
+	}
+}
+
+// mod-es-notification 
+body #es .mod-es-menu-bar {
+	text-align: right;
+	
+	.o-nav__item {
+		padding-left: @si-base-spacing--sm;
+		padding-right: @si-base-spacing--sm;
+	}  
+
+	&__icon-link {
+		font-size: 18px;
+		color: #fff;
+		padding: 4px 8px;
+	}
+
+	&__link-bubble { // Fix #36
+		font-size: 0;
+		right: 4px;
+		background-color: @si-bg-notice;
+		border-radius: @si-border-radius-rounded;
+		min-width: 8px;
+		height: 8px;
+		line-height: 8px;
+		padding: 0;
+	}
+}
+
+
+
+// mod-es-dropdown-menu
+body #es.mod-es-dropdown-menu {
+	.dropdown-toggle_ {
+		padding-right: @si-base-spacing;
+		position: relative;
+
+		&:before {
+			content: "\f107";
+			font-family: "FontAwesome";
+			font-size: 12px;
+			font-weight: bold;
+			color: #fff;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			.translate(0, -50%);
+		}
+	}
+	.dropdown-menu {
+		top: 120%;
+		left: auto;
+		width: 240px;
+		max-height: calc(~"100vh - 56px - 64px"); // minus top bottom bar
+		overflow-y: auto;
+	}
+	.dropdown-menu-right {
+		// right: -@si-base-spacing;
+	}
+	.dropdown-menu > li > a {
+		font-size: 13px;
+	}
+	.mod-es-dropdown-menu__body {
+		display: none;
+	}
+	.o-media__image {
+		margin-right: 0;
+	}
+	.o-avatar {
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+	}
+	.o-avatar-status__indicator {
+		display: none;
+	}
+	.btn-link {
+		color: #fff;
+		&:hover,
+		&:active {
+			text-decoration: none;
+			background-color: transparent !important;
+		}
+	}
+}
+
+@media (max-width: @screen-sm-min) {
+	body #es.mod-es-dropdown-menu {
+		.dropdown_ {
+			padding: 2px 4px;
+			border-radius: 4px;
+			&.open {
+				background: #fff;
+				
+				.o-avatar {
+					box-shadow: 0px 0px 3px rgba(255,255,255,.65);
+				}
+			}
+		}
+		.dropdown-menu {
+			height: auto; // Height base on menu items
+			max-height: calc(~"100vh - 56px - 40px - 8px"); // minus top bottom offset bar
+			overflow-y: auto;
+			position: fixed;
+			top: 55px;
+			right: 16px;
+			left: auto;
+			// bottom: 0;
+			// height: 90%;
+		}
+	}
+}
+.sp-search-toggle,
+.sp-search-toggle-off,
+.sp-topnotification-toggle {
+	display: none;
+}
+.sp-search-toggle {
+	color: #fff;
+	margin-left: auto;
+	&__icons {
+
+		.fa { // fa
+			width: 10px;
+			text-align: center;
+			&:before {
+				// content: "\f142";
+			}
+		}
+	}
+	&:hover {
+		color: #fff;
+	}
+}
+.sp-topnotification-toggle {
+	position: relative;
+	&__icons {
+		.fa { // fa
+			width: 10px;
+			text-align: center;
+			&:before {
+				content: "\f142";
+			}
+		}
+	}
+	&__bubble {
+		position: absolute;
+		top: 0;
+		right: -4px;
+		background-color: #6CB3CD;
+		border-radius: 50%;
+		min-width: 8px;
+		height: 8px;
+		line-height: 8px;
+		display: none;
+
+	}
+}
+.has-es-noti {
+	.sp-topnotification-toggle__bubble {
+		display: inline-block;
+	}
+}
+
+// For mobile to tablets portrait 
+@media (min-width: 320px) and (max-width: @screen-lg) {
+	.is-tablet,
+	.is-mobile { // <body>
+		.office-header {
+			&__left {
+				.flex(0 0 50%);
+				overflow: hidden;
+			}
+			&__content {
+				.flex-display(flex);
+				// display: none;
+				// position: absolute;
+				// top: 0;
+				// left: 0;
+				// background: blue;
+				// width: 100%;
+				// z-index: 2;
+				// height: 56px;
+			}
+			&__right {
+				.flex(0 0 auto);
+				.flex-display(flex);
+			}
+		}
+		#sp-search {
+			display: none;
+		}
+		.sp-search-toggle {
+			.flex-display(flex);
+			padding: 0 @si-base-spacing--sm;
+		}
+		.es-top-mod-group {
+			.justify-content(left);
+			.flex-flow(row-reverse);
+		}
+
+
+		#sp-topnotification {
+			margin-left: @si-base-spacing--sm;
+			.mod-es-notification {
+				
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 52px;
+				
+				z-index: 2;
+				height: 56px;
+				.flex-display(flex);
+				.align-items(center);
+				.justify-content(center);
+				display: none;
+			}
+			.sp-topnotification-toggle {
+				display: block;
+				color: #fff;
+				padding: 0 8px 0 16px;
+				border-left: 1px solid rgba(255, 255, 255, 0.5);
+			}
+		}
+		&.office-search-open {
+			#sp-search {
+				.flex-display(flex);
+				.align-items(center);
+				position: absolute;
+				left: 0;
+				// background: #000;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				padding-left: @si-base-spacing;
+				padding-right: @si-base-spacing;
+			}
+			.mod-es-search {
+				.flex(1 0 auto);
+
+				padding-right: @si-base-spacing;
+			}
+		}
+		&.office-noti-open {
+			#sp-topnotification {
+				.mod-es-notification {
+					.flex-display(flex);
+				}
+			}
+			.sp-topnotification-toggle__bubble {
+				display: none;
+			}
+			.sp-topnotification-toggle__icons .fa::before {
+				content: "\f00d"; // times
+			}
+		}
+	}
+}

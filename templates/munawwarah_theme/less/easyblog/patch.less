@@ -1,0 +1,164 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+
+/**
+* Elements / Blocks
+*/
+/**
+* Typo
+*/
+#eb {
+	font-family: @si-font-family;
+	legend {
+		font-weight: 500;
+	}
+	.eb-page-header { // Archives
+		h2 {
+			font-size: 16px;
+		}
+	}
+}
+
+/**
+* Color
+*/
+#eb {
+	.eb-post-meta,
+	.eb-post-meta a {
+		color: @si-meta-color !important;
+	}
+}
+
+
+// Background /Shade
+// ----------------
+#eb {
+	
+	.eb-entry-author-recents,
+	.eb-author-filter {
+		background-color: @si-bg;
+	}
+	
+}
+
+// Border Color
+// ----------------
+#eb {
+	
+	
+	hr, 
+	.eb-head, 
+	.eb-head-title > span, 
+	.eb-box, 
+	.eb-calendar tbody > tr > td, 
+	.eb-entry-nav, 
+	.eb-image-viewport, 
+	.eb-comment-form, 
+	.eb-showcases, 
+	.eb-post-thumb .eb-post-image, 
+	.eb-author, 
+	.eb-authors-head,
+	.eb-tags-filter,
+	.form-control,
+	.eb-tags-item,
+	.eb-category {
+		border-color: @si-border-color;
+	}
+	.btn-default,
+	.eb-stats-nav > li .btn {
+		border-color: @si-border-color !important;
+	}
+	.eb-stats-listing > div + div, 
+	.eb-calendar__item:not(:first-child), 
+	.eb-entry-author-recents {
+		border-top-color: @si-border-color;
+	}
+
+	.popbox-dropdown__hd,
+	.eb-box-head, 
+	.eb-calendar-topbar, 
+	.eb-section-heading {
+		border-bottom-color: @si-border-color;
+	}
+	.eb-xxx {
+		border-left-color: @si-border-color;
+		border-right-color: @si-border-color;
+	}
+	.eb-calendar-days > td:first-child, 
+	.eb-calendar-control > td.eb-calendar-previous {
+		border-left-color: @si-border-color;
+	}
+	.eb-calendar-days > td:last-child, 
+	.eb-calendar-control > td.eb-calendar-next {
+		border-right-color: @si-border-color;
+	}
+}
+
+// Spacing
+// ----------------
+
+#eb {
+	.eb-entry-author-recents {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+
+
+
+
+// Objects
+// ----------------
+#eb {
+	.eb-avatar {
+		border-radius: @si-avatar-radius;
+		img {
+			border-radius: @si-avatar-radius;
+		}
+	}
+
+	.eb-empty,
+	.eb-comments-empty {
+		background-color: @si-bg;
+		border: 0;
+		.fa {
+			display: none;
+		}
+	}
+
+	// bleeding design 
+	.eb-page-header + hr.clearfix { // enforce 
+		margin-left: -@si-base-spacing;
+		margin-right: -@si-base-spacing;
+	}
+}
+
+
+
+#eb .dropdown-menu-right {
+	left: auto; // due to EB missing and override have to re-apply again
+}
+
+
+#eb .eb-mag-blog-image {
+	padding-bottom: 24vh;
+}
+
+
+#eb .eb-dashboard-sticky-header.affix {
+	top: 56px;
+}
+#eb.is-mobile .eb-dashboard-sticky-header.affix {
+	z-index: 2;
+	top: 0;
+}
+
+// #63
+#eb .eb-entry-author-meta .btn-group .dropdown-toggle_ {
+	box-shadow: none;
+}

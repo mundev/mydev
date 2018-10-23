@@ -1,0 +1,87 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+
+/**
+* Elements / Blocks
+*/
+/**
+* Typo
+*/
+#kt {}
+
+/**
+* Color
+*/
+#kt {}
+
+
+// Background /Shade
+// ----------------
+#kt {
+	.kt-comments-title , 
+	.kt-comments__item, 
+	.kt-comments__item.is-child, 
+	.kt-form {
+		background-color: @si-bg;
+	}
+}
+
+// Border Color
+// ----------------
+#kt {
+	.kt-comments-title, 
+	.kt-comments__item, 
+	.kt-comments__item.is-parent:first-child, 
+	.kt-form {
+		border: 1px solid @si-border-color;
+	}
+
+	.kt-form-editor, 
+	.kt-editor-info {
+		border-color: @si-border-color;
+	}
+
+	.kt-comments__item.is-parent {
+		borde-top-color: @si-border-color;
+	}
+
+	.markItUpHeader {
+		border-bottom-color: @si-border-color !important;
+	}
+}
+
+// Spacing
+// ----------------
+#kt {
+	.kt-comment-title-bar {
+		margin: @si-base-spacing--lg 0;
+	} 
+	.kt-comments__item, 
+	.kt-comments__item.is-child {
+		margin-bottom: @si-base-spacing--lg;
+	}
+
+	.kt-comments__item, 
+	.kt-form {
+		padding: @si-base-spacing--lg;
+	}
+
+	.kt-comments-title {
+		padding: @si-base-spacing @si-base-spacing--lg;
+	}
+	.kt-comments [data-kt-view-reply] > a {
+		margin-top: 0 !important;
+		margin-bottom: @si-base-spacing--lg !important;
+	}
+}
+
+// Object
+// ---------------
+.kt-comments-title {
+	font-size: 16px;
+	font-weight: bold;
+}

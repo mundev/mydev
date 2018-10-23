@@ -1,0 +1,71 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+.es-profile-header:not(.es-profile-header--mini) {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin: -@si-base-spacing;
+	z-index: 8; // #94 Higher than es-story
+	
+	.es-profile-header__hd {
+		&.without-cover {
+			.es-profile-header__avatar-wrap {
+				position: relative;
+				width: 88px;
+			}
+		}
+	}
+	.es-profile-header__avatar-wrap {
+		bottom: @si-base-spacing;
+	}
+	.es-profile-header__bd {
+		margin-left: 0;
+	}
+	.es-profile-header-nav {
+		padding-left: 0;
+	}
+}
+
+.es-profile-header__cover {
+	min-height: 220px;
+	max-height: 260px;
+}
+
+.es-profile-header-nav .is-active .es-profile-header-nav__link {
+	color: @si-text-color !important;
+}
+.es-profile-header__back {
+	position: absolute;
+	top: @si-base-spacing;
+	left: @si-base-spacing;
+	z-index: 4;
+}
+
+
+
+&.is-mobile {
+	.es-profile-header:not(.es-profile-header--mini) {
+		.es-profile-header__hd {
+			&.without-cover {
+				.es-profile-header__avatar-wrap {
+					width: 80px;
+				}
+			}
+		}
+	}
+	
+	.es-profile-header__cover {
+		min-height: 120px;
+	}
+	// #72
+	.es-profile-header-nav__item {
+		.dropdown-menu {
+			max-height: 120px;
+			overflow-y: auto;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+/**
+* Components patch
+*/
+
+// Docker
+body.has-docker {
+	padding-top: 40px !important;
+}
+
+
+// Form
+// ----------------
+ 
+.view-login, 
+.view-reset, 
+.view-remind, 
+.com-users.view-registration, 
+.com-users.view-profile {
+	#sp-component {
+		.sp-column {
+			background-color: @si-bg;
+			padding: @si-base-spacing--lg;
+			border: 1px solid @si-border-color;
+		}
+	}
+}
+
+article.item {
+	background-color: @si-bg;
+	margin-bottom: @si-base-spacing--lg;
+	padding: @si-base-spacing--lg;
+	border: 1px solid @si-border-color;
+}

@@ -1,0 +1,81 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+#es .es-convo__sidebar {
+	width: 320px;
+	.flex(0 0 320px);
+}
+
+#es.es-main.view-conversations,
+#es.es-main.view-conversations > div:first-child:not(.o-alert),
+#es .es-conversations,
+#es .es-convo,
+#es .es-convo__content,
+#es .es-convo__content-scroll-area {
+	height: 100%;
+}
+#es .es-convo__content-scroll-area {
+	// max-height: 540px;
+	max-height: ~"calc(100vh - 56px - 40px - 150px)"; // office header, convo header, convo composer
+}
+#es .es-convo {
+	border-right: 0;
+}
+
+#es.es-main.view-conversations {
+	.o-alert {
+		margin: 0;
+	}
+}
+#es .es-convo__content-hd-title {
+	line-height: 28px;
+}
+
+#es {
+	.btn-mobile-new-convo {
+		width: auto;
+		margin: @si-base-spacing--sm @si-base-spacing;
+	}
+}
+
+#es.is-mobile {
+	.es-convo,
+	.es-convo__content {
+		// overflow: visible;
+	}
+	.es-convo__content-action {
+		&__content-action {
+			.justify-content(flex-start);
+		}
+		[data-item-tools] {
+			margin-left: auto;
+		}
+	}
+	.es-convo__content-scroll-area {
+		// -webkit-overflow-scrolling: auto;
+		// overflow-y: visible;
+		max-height: none;		
+		// height: 100%;
+	}
+	.es-convo__content-hd .btn-default, 
+	.es-convo__content-hd .btn-default:hover, 
+	.es-convo__content-hd .btn-default:active, 
+	.es-convo__content-hd .btn-default:focus {
+		background-color: #fff !important;
+		color: #aaa !important;
+		border-color: @si-border-color !important;
+	}
+} 
+
+// Conversation
+#es .es-convo__content-hd .btn-default, 
+#es .es-convo__content-hd .btn-default:hover, 
+#es .es-convo__content-hd .btn-default:active, 
+#es .es-convo__content-hd .btn-default:focus {
+	background-color: #fff !important;
+	color: #aaa !important;
+	border-color: #fff !important;
+}

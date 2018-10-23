@@ -1,0 +1,115 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+/**
+* Override for Forms
+*/
+#es {
+	.es-forms {
+		
+		.es-snackbar {
+			// padding-left: 0;
+		}
+	}
+	.es-forms,
+	.es-field-header {
+		.es-snackbar {
+			border-top: 1px solid @si-border-color;
+			border-bottom: 1px solid @si-border-color;
+			// padding-top: @si-base-spacing;
+			padding: @si-base-spacing;
+			margin-left: -@si-base-spacing;
+			margin-right: -@si-base-spacing;
+		}
+	}
+
+	.es-adv-search2 {
+		&__options {
+			margin: @si-base-spacing 0 0;
+		}
+		.o-form-actions {
+			margin: 0;
+		}
+
+	}
+	.o-form-control {
+		box-shadow: none;
+	}
+	.o-form-actions {
+		background-color: transparent;
+	}
+}
+
+// #es .es-stepbar {
+// 	margin-bottom: @si-base-spacing--lg !important; // Reset trump t-lg-mb--lg
+
+// 	.es-stepbar__lists {
+// 		.flex-display(flex);
+
+// 		> li.divider-vertical {
+// 			margin: 0;
+// 			width: 100%;
+// 			&.active {
+// 				background-color: @major_color;
+// 			}
+// 		} 
+// 	}
+
+// 	.o-grid__cell--auto-size {
+// 		.flex(1);
+// 	}
+// 	.o-grid__cell + .o-grid__cell {
+// 		display: none;
+// 	}
+// }
+
+// #es .es-forms {
+// 	&__group {
+// 		margin-top: -1px;
+// 	}
+// 	&__content { // Fix #38 for horizon theme
+// 		padding: 0;
+// 	}
+// 	.es-snackbar {
+// 		border-left: 0;
+// 		border-right: 0;
+// 		border-bottom: 0;
+// 		border-radius: @si-border-radius--none;
+// 		border: none;
+// 		&__title {
+// 			font-size: 16px;
+// 		}
+// 	}
+// 	.notification-content {
+// 		padding: 0;
+// 		border: none;
+// 	}
+// 	.es-snackbar + p {
+// 		border-bottom: 1px solid @si-border-color;
+// 	}
+
+// 	.o-form-actions {
+// 		background-color: @si-bg;
+// 	}
+// }
+
+
+// // Spacing
+// // ----------------
+
+// #es .es-forms {
+// 	.es-field-header {
+// 		// margin-top: 24px;
+// 	}
+// 	.es-snackbar {
+// 		margin: 0 -@si-base-spacing--lg;
+// 		padding: @si-base-spacing--lg @si-base-spacing--lg @si-base-spacing--xs;
+// 	}
+// 	.es-snackbar + p {
+// 		margin: 0 -@si-base-spacing--lg @si-base-spacing--lg;
+// 		padding:@si-base-spacing--xs @si-base-spacing--lg @si-base-spacing--lg;
+// 	}
+// }

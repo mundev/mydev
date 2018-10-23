@@ -1,0 +1,22 @@
+[
+	{
+		"index": 1,
+		"title": "Requirements",
+		"template": "requirements"
+	},
+	{
+		"index": 2,
+		"title": "Installation Method",
+		"template": "source"
+	},
+	{
+		"index": 3,
+		"title": "Installation",
+		"template": "installing"
+	},
+	{
+		"index": 4,
+		"title": "Maintenance",
+		"template": "maintenance"
+	}
+]

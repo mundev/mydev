@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_ES_MANAGE_LAYOUT_MODERATION">
+        <message>
+            <![CDATA[COM_ES_MANAGE_LAYOUT_MODERATION_DESC]]>
+        </message>
+        <view>manage</view>
+        <layout>clusters</layout>
+    </layout>
+</metadata>

@@ -1,0 +1,311 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+/*
+<div class="office-container">
+	<div class="office-container__left">
+		(left) joomla menu      
+	</div>
+	<div class="office-container__content">
+
+		// ES
+		$html .= '<jdoc:include type="component" />';
+
+		// Non-ES
+		<div class="office-container__content-component">
+			<div class="office-container__content-menu">
+				(component-side) componenets menu
+			</div>
+			$html .= '<jdoc:include type="component" />';               
+		</div>
+
+	</div>
+	<div class="office-container__right">
+		(right)
+	</div>
+</div>
+
+*/
+html {
+	height: 100%;
+}
+body.site {
+	font-family: @si-font-family;
+	font-weight: @si-font-weight;
+	h1, h2, h3, h4, h5, h6 {
+		font-family: @si-font-family;
+	}
+}
+.office-header {
+	.align-items(center);
+	position: relative;
+	height: 56px;
+}
+.office-header,
+.office-container {
+	width: 100%;
+	.flex-display(flex);
+ 
+	&__left {
+		.flex(0 0 320px);
+		padding-left: @si-base-spacing;
+		padding-right: @si-base-spacing;
+	}
+	&__content {
+		.flex(1 1 auto);
+		min-width: 0;
+	}
+	&__right {
+		.flex(0 0 320px;);
+		margin-left: auto;
+		padding-left: @si-base-spacing;
+		padding-right: @si-base-spacing;
+		min-width: 0;
+	}
+}
+
+
+// chaos and not semantic due to .es-sidebar have to act has templates left position
+.office-container {
+	background-color: #f9f9f9;
+	
+	&__content {
+		.flex(1 1 0%); // #87 IE
+		background: #fff;
+	}
+	&__content-component-wrapper,
+	.es-content {
+		background-color: #fff;
+		padding: @si-base-spacing;
+		width: 100%;
+		max-width: 1000px; // #118
+		margin: 0 auto;
+	}
+	&__content-component {
+		.flex-display(flex);
+		height: 100%;
+	}
+	#es .es-container .es-sidebar,
+	&__content-menu { // behave like es-sidebar
+		width: 320px;
+		.flex(0 0 320px);
+		margin-right: 0;
+		border-right: 1px solid @si-border-color; 
+		padding-top: @si-base-spacing;
+		padding-left: @si-base-spacing;
+		padding-right: @si-base-spacing;
+	}
+	.es-sidebar {
+
+	}
+	&__right {
+		border-left: 1px solid @si-border-color; 
+		padding-top: @si-base-spacing;
+		padding-bottom: @si-base-spacing;		
+	}
+	
+}
+
+.es-stage,
+.es-app-wrapper {
+	height: 100%;
+}
+body {
+
+	.office-container {
+		position: relative;
+		min-height: calc(~"100vh - 56px - 64px"); // minus top bottom bar
+		#es .es-container .es-sidebar,
+		&__content-menu,
+		&__right {
+			// height: calc(~"100vh - 56px - 64px"); // minus top bottom bar
+			background-color: #f9f9f9;
+			-webkit-overflow-scrolling: touch;
+		}
+	}
+	#sp-office-content-wrapper, {
+		min-height: calc(~"100vh - 56px - 64px"); // minus top bottom bar
+	}
+}
+
+// For mobile to tablets portrait 
+@media (min-width: 320px) and (max-width: @screen-lg) {
+
+	body.is-tablet,
+	body.is-mobile { // <body>
+		// height: 100%;
+		.body-wrapper,
+		.body-innerwrapper
+		#eb.eb-component {
+			min-height: calc(~"100vh - 56px - 40px"); // minus top bottom bar
+		}
+		#es.is-mobile .es-container.sidebar-open .es-content {
+			left: 0;
+		}
+		
+		
+		.body-wrapper,
+		// .body-innerwrapper,
+		#sp-office-content-wrap {
+			height: 100%;
+		}
+		.office-container {
+			position: relative;
+			// min-height: calc(~"100vh - 56px - 40px"); // minus top bottom bar
+			#es .es-container .es-sidebar,
+			&__content-menu,
+			&__right {
+				height: calc(~"100vh - 56px - 40px"); // minus top bottom bar
+				background-color: #f9f9f9;
+				-webkit-overflow-scrolling: touch;
+			}
+
+			#es .es-container .es-sidebar,
+			&__content-menu {
+				
+
+				overflow: hidden;
+
+				padding: @si-base-spacing;
+				position: fixed;
+				width: 100%;
+				top: 56px;
+				bottom: 0;
+				left: 0;
+				z-index: 999; 
+				// visibility: hidden;
+				
+				transform: translate3d(-100%,0,0);
+
+				transition: transform .5s cubic-bezier(.79,.14,.15,.86);
+				// visibility: visible;
+				width: 100%;
+				
+
+			}
+			&__right {
+
+				overflow: hidden;
+
+				padding: @si-base-spacing;
+				position: fixed;
+				width: 100%;
+				top: 56px;
+				bottom: 0;
+				right: 0;
+				z-index: 999; 
+				// visibility: hidden;
+				
+				transform: translate3d(100%,0,0);
+
+				transition: transform .5s cubic-bezier(.79,.14,.15,.86);
+				// visibility: visible;
+				width: 100%;
+			}
+
+			&__content-component-wrapper,
+			#es.is-mobile .es-content {
+				padding: @si-base-spacing;
+			}
+		}
+
+		&.office-left-open {
+			// Removing double scrolling on mobile. #71
+			overflow: hidden;
+			position: fixed;
+			width: 100%;
+			.office-container {
+				#es .es-container .es-sidebar,
+				&__content-menu {
+					// .flex-display(flex);
+					display: block;
+					left: 0;
+					width: 100%;
+
+					overflow-y: auto;
+					visibility: visible;
+					// display: block;
+					left: 0;
+					width: 100%;
+					// transform: translate3d(15%,0,0);
+					transition: transform .5s cubic-bezier(.79,.14,.15,.86);
+					transform: translate3d(0%,0,0);
+				}
+			}
+			.mobile-footer {
+				z-index: 10000;
+			}
+			.mobile-footbar__item-left-icon {
+				&:before {
+					content: "\f00d"; // times
+				}
+			}
+		}
+
+		&.office-right-open {
+			// Removing double scrolling on mobile. #71
+			overflow: hidden;
+			position: fixed;
+			width: 100%;
+			.office-container {
+				&__right {
+					overflow-y: auto;
+					visibility: visible;
+					// display: block;
+					right: 0;
+					width: 100%;
+					// transform: translate3d(15%,0,0);
+					transition: transform .5s cubic-bezier(.79,.14,.15,.86);
+					transform: translate3d(0%,0,0);
+				}
+			}
+			.mobile-footer {
+				z-index: 10000;
+			}
+			.mobile-footbar__item-right-icon {
+				&:before {
+					content: "\f00d"; // times
+				}
+			}
+		}
+
+		#sp-footer {
+			display: none;
+		}
+	}
+	
+	// Tablet looks weird if show full width 
+	body.is-tablet {
+		.office-container {
+			.office-container {
+				#es .es-container .es-sidebar,
+				&__content-menu {
+					transform: translate3d(calc(~"-100%"),0,0);
+				}
+			}
+
+		}
+		&.office-left-open {
+			.office-container {
+				#es .es-container .es-sidebar,
+				&__content-menu {
+					left: 0;
+					width: 300px;
+					transform: translate3d(calc(~"-100% + 300px"),0,0);
+				}
+			}
+		}
+		&.office-right-open {
+			.office-container {
+				&__right {
+					right: 0;
+					width: 300px;
+					transform: translate3d(calc(~"100% - 300px"),0,0);
+				}
+			}
+		}
+	}
+}

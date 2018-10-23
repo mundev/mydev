@@ -1,0 +1,12 @@
+{
+	"title": {
+		"default": "PLG_FIELDS_EASYBLOG_DESC_DEFAULT_TITLE"
+	},
+
+	"description": {
+		"default": "PLG_FIELDS_EASYBLOG_DESC_DEFAULT_DESCRIPTION"
+	},
+
+	"default": false,
+	"visible_display": false
+}

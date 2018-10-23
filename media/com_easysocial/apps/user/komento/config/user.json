@@ -1,0 +1,24 @@
+[
+	{
+		"title"		: "APP_USER_KOMENTO_SETTINGS_PROFILE",
+		"desc"		: "APP_USER_KOMENTO_SETTINGS_PROFILE_DESC",
+		"fields"	:
+		[
+			{
+				"label"		: "APP_USER_KOMENTO_SETTINGS_PROFILE_TOTAL",
+				"tooltip"	: "APP_USER_KOMENTO_SETTINGS_PROFILE_TOTAL_DESC",
+				"name"		: "total-profile",
+				"class"		: "input-mini center",
+				"type"		: "text",
+				"default"	: 5
+			},
+			{
+				"label"		: "APP_USER_KOMENTO_SETTINGS_PROFILE_WIDGET",
+				"tooltip"	: "APP_USER_KOMENTO_SETTINGS_PROFILE_WIDGET_DESC",
+				"name"		: "widget-profile",
+				"type"		: "boolean",
+				"default"	: true
+			}
+		]
+	}
+]

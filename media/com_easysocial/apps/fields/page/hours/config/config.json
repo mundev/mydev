@@ -1,0 +1,34 @@
+{
+	"privacy": false,
+	"title": {
+		"default": "PLG_FIELDS_PAGE_HOURS_DEFAULT_TITLE"
+	},
+
+	"description": {
+		"default": "PLG_FIELDS_PAGE_HOURS_DEFAULT_DESC"
+	},
+
+	"time_format": {
+		"label" : "FIELDS_USER_DATETIME_CONFIG_TIME_FORMAT",
+		"tooltip" : "FIELDS_USER_DATETIME_CONFIG_TIME_FORMAT_DESC",
+		"type" : "select",
+		"default" : 1,
+		"option" : [
+			{
+				"label": "COM_ES_SETTINGS_DISPLAY_TIME_FORMAT_12H",
+				"value": 1
+			},
+			{
+				"label": "COM_ES_SETTINGS_DISPLAY_TIME_FORMAT_24H",
+				"value": 2
+			}
+		]
+	},
+
+	"multiple": {
+		"label" : "PLG_FIELDS_PAGE_HOURS_MULTIPLE",
+		"tooltip" : "PLG_FIELDS_PAGE_HOURS_MULTIPLE_DESC",
+		"type" : "boolean",
+		"default" : false
+	}
+}

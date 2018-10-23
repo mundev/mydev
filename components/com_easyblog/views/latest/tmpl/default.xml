@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_EASYBLOG_MENU_FRONTPAGE_LAYOUT">
+		<message>
+			<![CDATA[COM_EASYBLOG_MENU_FRONTPAGE_LAYOUT_DESC]]>
+		</message>
+		<view>latest</view>
+	</layout>
+
+	<fields name="params">
+		<fieldset name="COM_EASYBLOG_MENU_POST_OPTIONS" label="COM_EASYBLOG_MENU_POST_OPTIONS" info="COM_EASYBLOG_MENU_POST_OPTIONS_INFO" id="post">
+			<field name="post_image" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_IMAGE" description="COM_EASYBLOG_SHOW_POST_IMAGE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_image_placeholder" default="-1" type="radio" class="btn-group" label="COM_EASYBLOG_SHOW_POST_IMAGE_PLACEHOLDER" description="COM_EASYBLOG_SHOW_POST_IMAGE_PLACEHOLDER_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_title" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_TITLE" description="COM_EASYBLOG_SHOW_POST_TITLE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_category" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_CATEGORY" description="COM_EASYBLOG_SHOW_POST_CATEGORY_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_hits" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_HITS" description="COM_EASYBLOG_SHOW_POST_HITS_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_date" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_DATE" description="COM_EASYBLOG_SHOW_POST_DATE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_date_source" default="-1" type="list" class="btn-group" label="COM_EASYBLOG_POST_DATE_SOURCE" description="COM_EASYBLOG_POST_DATE_SOURCE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="created">COM_EASYBLOG_POST_DATE_SOURCE_CREATION</option>
+				<option value="modified">COM_EASYBLOG_POST_DATE_SOURCE_MODIFIED</option>
+				<option value="publish_up">COM_EASYBLOG_POST_DATE_SOURCE_PUBLISHING</option>
+			</field>
+
+			<field name="post_ratings" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_RATINGS" description="COM_EASYBLOG_SHOW_POST_RATINGS_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_copyrights" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_COPYRIGHTS" description="COM_EASYBLOG_SHOW_POST_COPYRIGHTS_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_author" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_AUTHOR" description="COM_EASYBLOG_SHOW_POST_AUTHOR_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_author_avatar" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_AUTHOR_AVATAR" description="COM_EASYBLOG_SHOW_POST_AUTHOR_AVATAR_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_tags" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_TAGS" description="COM_EASYBLOG_SHOW_POST_TAGS_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_type" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_TYPE" description="COM_EASYBLOG_SHOW_POST_TYPE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_social_buttons" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_SOCIAL_BUTTONS" description="COM_EASYBLOG_SHOW_SOCIAL_BUTTONS_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_readmore" default="-1" type="radio" class="btn-group" label="COM_EASYBLOG_SHOW_READMORE" description="COM_EASYBLOG_SHOW_READMORE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_fields" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_CUSTOM_FIELDS" description="COM_EASYBLOG_SHOW_CUSTOM_FIELDS_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_nickel_column" default="-1" type="list" class="btn-group" label="COM_EASYBLOG_NICKEL_COLUMN" description="COM_EASYBLOG_NICKEL_COLUMN_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="COM_EB_MENU_PAGINATION_OPTIONS" label="COM_EB_MENU_PAGINATION_OPTIONS" info="COM_EB_MENU_PAGINATION_OPTIONS_INFO" id="pagination">
+			<field name="pagination_style" type="list" default="-1" class="btn-group" label="COM_EB_PAGINATION_STYLE" description="COM_EB_PAGINATION_STYLE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="normal">COM_EASYBLOG_NORMAL_OPTION</option>
+				<option value="autoload">COM_EB_AUTO_LOADING</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="COM_EASYBLOG_MENU_COMMENT_OPTIONS" label="COM_EASYBLOG_MENU_COMMENT_OPTIONS" info="COM_EASYBLOG_MENU_COMMENT_OPTIONS_INFO" id="comments">
+			<field name="post_comment_counter" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_COMMENT_COUNTER" description="COM_EASYBLOG_SHOW_COMMENT_COUNTER_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			<field name="post_comment_preview" default="-1" type="radio" class="btn-group" label="COM_EASYBLOG_SHOW_COMMENT_PREVIEW" description="COM_EASYBLOG_SHOW_COMMENT_PREVIEW_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="post_comment_preview_limit" default="3" type="text" class="form-control input-mini text-center" label="COM_EASYBLOG_COMMENT_PREVIEW_LIMIT" description="COM_EASYBLOG_COMMENT_PREVIEW_LIMIT_DESC" />
+		</fieldset>
+
+		<fieldset name="COM_EASYBLOG_MENU_FEATURED_OPTIONS" label="COM_EASYBLOG_MENU_FEATURED_OPTIONS" info="COM_EASYBLOG_MENU_FEATURED_OPTIONS_INFO" id="featured">
+			<field name="featured_slider" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_FEATURED_POSTS" description="COM_EASYBLOG_SHOW_FEATURED_POSTS_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="featured_slider_all_pages" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_FEATURED_POSTS_ON_ALL_PAGES" description="COM_EASYBLOG_SHOW_FEATURED_POSTS_ON_ALL_PAGES_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="featured_auto_slide" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_AUTO_SLIDE" description="COM_EASYBLOG_AUTO_SLIDE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="featured_auto_slide_interval" type="text" default="8" class="form-control input-mini text-center" label="COM_EASYBLOG_AUTO_SLIDE_INTERVAL" description="COM_EASYBLOG_AUTO_SLIDE_INTERVAL_DESC" />
+
+			<field name="featured_post_image" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_IMAGE" description="COM_EASYBLOG_SHOW_POST_IMAGE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="featured_post_title" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_TITLE" description="COM_EASYBLOG_SHOW_POST_TITLE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="featured_post_category" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_CATEGORY" description="COM_EASYBLOG_SHOW_POST_CATEGORY_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="featured_post_author" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_AUTHOR" description="COM_EASYBLOG_SHOW_POST_AUTHOR_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="featured_post_author_avatar" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_AUTHOR_AVATAR" description="COM_EASYBLOG_SHOW_POST_AUTHOR_AVATAR_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="featured_post_content" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_CONTENT" description="COM_EASYBLOG_SHOW_POST_CONTENT_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="featured_post_content_limit" type="text" default="250" class="form-control input-mini text-center" label="COM_EASYBLOG_POST_CONTENT_LIMIT" description="COM_EASYBLOG_POST_CONTENT_LIMIT_DESC" />
+
+			<field name="featured_post_date" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_POST_DATE" description="COM_EASYBLOG_SHOW_POST_DATE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="featured_post_date_source" type="list" default="-1" class="btn-group" label="COM_EASYBLOG_POST_DATE_SOURCE" description="COM_EASYBLOG_POST_DATE_SOURCE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="created">COM_EASYBLOG_POST_DATE_SOURCE_CREATION</option>
+				<option value="modified">COM_EASYBLOG_POST_DATE_SOURCE_MODIFIED</option>
+				<option value="publish_up">COM_EASYBLOG_POST_DATE_SOURCE_PUBLISHING</option>
+			</field>
+
+			<field name="featured_post_readmore" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_READMORE" description="COM_EASYBLOG_SHOW_READMORE_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="featured_bottom_navigation" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SHOW_BOTTOM_NAVIGATION" description="COM_EASYBLOG_SHOW_BOTTOM_NAVIGATION_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="Truncations" addfieldpath="/administrator/components/com_easyblog/elements" label="COM_EASYBLOG_SETTINGS_AUTOMATED_TRUNCATION_CONTENT" info="COM_EASYBLOG_SETTINGS_AUTOMATED_TRUNCATION_CONTENT_INFO" id="truncations">
+			<field name="ebconfig_composer_truncation_enabled" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SETTINGS_AUTOMATED_TRUNCATION_COMPOSER_ENABLE" description="COM_EASYBLOG_SETTINGS_AUTOMATED_TRUNCATION_CONTENT_INFO">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="ebconfig_composer_truncation_readmore" type="radio" default="-1" class="btn-group" label="COM_EASYBLOG_SETTINGS_TRUNCATION_COMPOSER_DISPLAY_READMORE_WHEN_NECESSARY" description="">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="0">JNO</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="ebconfig_composer_truncate_image_position" type="list" default="-1" class="btn-group" label="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_IMAGE_POSITIONS" description="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_IMAGE_POSITIONS_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="top">COM_EASYBLOG_TOP_OPTION</option>
+				<option value="bottom">COM_EASYBLOG_BOTTOM_OPTION</option>
+				<option value="hidden">COM_EASYBLOG_DO_NOT_SHOW_OPTION</option>
+			</field>
+
+			<field name="ebconfig_composer_truncate_image_limit" default="-1" type="inputvalue" class="form-control input-mini text-center" label="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_IMAGE_LIMITS" description="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_IMAGE_LIMITS_DESC" />
+
+			<field name="ebconfig_composer_truncate_video_position" type="list" default="-1" class="btn-group" label="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_VIDEO_POSITIONS" description="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_VIDEO_POSITIONS_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="top">COM_EASYBLOG_TOP_OPTION</option>
+				<option value="bottom">COM_EASYBLOG_BOTTOM_OPTION</option>
+				<option value="hidden">COM_EASYBLOG_DO_NOT_SHOW_OPTION</option>
+			</field>
+
+			<field name="ebconfig_composer_truncate_video_limit" default="-1" type="inputvalue" class="form-control input-mini text-center" label="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_VIDEO_LIMITS" description="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_VIDEO_LIMITS_DESC" />
+
+			<field name="ebconfig_composer_truncate_audio_position" type="list" default="-1" class="btn-group" label="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_AUDIO_POSITIONS" description="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_AUDIO_POSITIONS_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="top">COM_EASYBLOG_TOP_OPTION</option>
+				<option value="bottom">COM_EASYBLOG_BOTTOM_OPTION</option>
+				<option value="hidden">COM_EASYBLOG_DO_NOT_SHOW_OPTION</option>
+			</field>
+
+			<field name="ebconfig_composer_truncate_audio_limit" default="-1" type="inputvalue" class="form-control input-mini text-center" label="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_AUDIO_LIMITS" description="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_AUDIO_LIMITS_DESC" />
+
+			<field name="ebconfig_composer_truncate_gallery_position" type="list" default="-1" class="btn-group" label="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_GALLERY_POSITIONS" description="COM_EASYBLOG_SETTINGS_LAYOUT_TRUNCATE_GALLERY_POSITIONS_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="top">COM_EASYBLOG_TOP_OPTION</option>
+				<option value="bottom">COM_EASYBLOG_BOTTOM_OPTION</option>
+				<option value="hidden">COM_EASYBLOG_DO_NOT_SHOW_OPTION</option>
+			</field>
+
+			<field name="ebconfig_composer_truncation_chars" default="-1" type="inputvalue" class="form-control input-mini text-center" label="COM_EB_MENU_TRUNCATE_MAX_CHAR_BUILT_IN" description="COM_EB_MENU_TRUNCATE_MAX_CHAR_BUILT_IN_DESC" />
+
+			<field name="ebconfig_main_truncate_type" type="list" default="-1" class="btn-group" label="COM_EB_MENU_TRUNCATE_TYPE_JOOMLA" description="COM_EB_MENU_TRUNCATE_TYPE_JOOMLA_DESC">
+				<option value="-1">COM_EASYBLOG_USE_DEFAULT_OPTIONS</option>
+				<option value="chars">COM_EASYBLOG_BY_CHARACTERS</option>
+				<option value="words">COM_EASYBLOG_BY_WORDS</option>
+				<option value="paragraph">COM_EASYBLOG_BY_PARAGRAPH</option>
+				<option value="break">COM_EASYBLOG_BY_BREAK</option>
+			</field>
+
+			<field name="ebconfig_layout_maxlengthasintrotext" default="-1" type="inputvalue" class="form-control input-mini text-center" label="COM_EB_MENU_TRUNCATE_MAX_CONTENT_JOOMLA" description="COM_EB_MENU_TRUNCATE_MAX_CONTENT_JOOMLA_DESC" />
+
+			<field name="ebconfig_main_truncate_maxtag" default="-1" type="inputvalue" class="form-control input-mini text-center" label="COM_EB_MENU_TRUNCATE_MAX_PARAGRAPH_JOOMLA" description="COM_EB_MENU_TRUNCATE_MAX_PARAGRAPH_JOOMLA_DESC" />
+		</fieldset>
+
+		<fieldset name="request" addfieldpath="/administrator/components/com_easyblog/elements">
+			<field name="post_include_featured" type="radio" default="0" class="btn-group" label="COM_EASYBLOG_INCLUDE_FEATURED_POSTS" description="COM_EASYBLOG_INCLUDE_FEATURED_POSTS_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="post_pin_featured" type="radio" default="0" class="btn-group" label="COM_EASYBLOG_PIN_FEATURED_POSTS" description="COM_EASYBLOG_PIN_FEATURED_POSTS_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field name="inclusion_authors" type="multiauthors" default="" label="COM_EASYBLOG_MENU_FILTER_INCLUDE_ONLY_AUTHORS" description="COM_EASYBLOG_MENU_FILTER_INCLUDE_ONLY_AUTHORS_HELP" />
+			<field name="exclusion_authors" type="multiauthors" default="" label="COM_EASYBLOG_MENU_FILTER_EXCLUDE_ONLY_AUTHORS" description="COM_EASYBLOG_MENU_FILTER_EXCLUDE_ONLY_AUTHORS_HELP" />
+
+			<field name="inclusion" type="multicategories" default="" label="COM_EASYBLOG_MENU_FILTER_SELECT_CATEGORIES" description="COM_EASYBLOG_MENU_FILTER_SELECT_CATEGORIES_DESC" />
+			<field name="exclusion_categories" type="multicategories" default="" label="COM_EASYBLOG_MENU_FILTER_EXCLUDE_ONLY_CATEGOREIS" description="COM_EASYBLOG_MENU_FILTER_EXCLUDE_ONLY_CATEGOREIS_HELP" />
+
+			<field name="inclusion_tags" type="multitags" default="" label="COM_EASYBLOG_MENU_FILTER_SELECT_TAGS" description="COM_EASYBLOG_MENU_FILTER_SELECT_TAGS_DESC" />
+
+			<field name="includesubcategories" type="radio" default="1" class="btn-group" label="COM_EASYBLOG_MENU_INCLUDE_SUBCATEGORIES" description="COM_EASYBLOG_MENU_INCLUDE_SUBCATEGORIES_DESC">
+				<option value="0">COM_EASYBLOG_NO</option>
+				<option value="1">COM_EASYBLOG_YES</option>
+			</field>
+
+			<field type="pagination" name="limit" default="-2" label="COM_EASYBLOG_ITEMS_PER_PAGE" description="COM_EASYBLOG_ITEMS_PER_PAGE_DESC" />
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,270 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+/**
+* Below specificity suitable for island design
+*/
+
+/**
+* Typo
+*/
+
+body #es,
+body #ck {
+	font-family: @si-font-family;
+	legend {
+		font-weight: 500;
+	}
+}
+
+body #es,
+body #ck {
+	input, 
+	button, 
+	select, 
+	textarea {
+		font-family: @si-font-family;
+	}
+}
+
+body.com-easysocial {
+	.office-container__left {
+		// display: none;
+	}
+}
+/**
+* Color / Spacing
+*/
+
+
+// Background /Shade
+// ----------------
+#es {
+	.es-snackbar,
+	.mod-es-albums-item,
+	.mod-card {
+		background-color: @si-bg;
+	}
+	
+	.dropdown-menu .divider {
+		background-color: @si-bg-divider;
+	}
+}
+
+// Border Color
+// ----------------
+#es { 
+	.es-snackbar  {
+		// border: 1px solid @si-border-color;
+	}
+	.es-stream-embed,
+	.es-stream-list > li + li,
+	.es-island, 
+	.es-hr, 
+	.es-form, 
+	.es-comments-form .es-form, 
+	.es-story,
+	.es-story-footer, 
+	.es-profile-header, 
+	.es-profile-data-table,
+	.es-profile-data-table thead tr,
+	.o-form-actions,
+	.es-cat-header,
+	.es-cat-header__hd,
+	.es-cat-header__ft,
+	.textboxlist,
+	.es-single-composer-textarea, 
+	.es-card, 
+	.es-convo,
+	.es-convo__attached-item, 
+	.es-stream-apps, 
+	.es-stream-control .btn-control i, 
+	.es-stream-embed.is-polls, 
+	.es-noti__item,
+	.es-story-meta-contents, 
+	.es-stream-apps--border, 
+	.es-profile-header-nav, 
+	.es-profile-header__ft, 
+	.es-users-item + .es-users-item, 
+	.es-card__ft, 
+	.es-convo-composer,
+	.es-profile-data-table tbody > tr:last-child td,
+	.profile-data-info__data,
+	.o-form-control,
+	.es-apps-item__ft,
+	.mod-es-albums-item,
+	.es-album-form-fields,
+	.es-photo-form-fields  {
+		border-color: @si-border-color;
+	}
+	
+	.btn-es-default-o {
+		border-color: @si-border-color !important;
+	}
+
+}
+
+// Spacing
+// ----------------
+#es {
+
+	.es-reaction-stats,
+	.es-comment,
+	.es-comments-form,
+	.es-actions-wrapper,
+	.es-leaderboard tr td {
+		padding-left: @si-base-spacing;
+		padding-right: @si-base-spacing;
+	}
+
+	.es-stream-list > li {
+		padding-left: @si-base-spacing;
+		padding-right: @si-base-spacing;
+		margin: 0 -@si-base-spacing;
+	}
+	.es-users-item {
+		padding: @si-base-spacing;
+	}
+	&.layout-edit,
+	&.layout-create,
+	&.layout-steps {
+		.es-content {
+			padding: @si-base-spacing;
+		}
+	}
+
+	// Bleeding
+	.es-bleed--top {
+		margin-top: -@si-base-spacing;
+		margin-left: -@si-base-spacing;
+		margin-right: -@si-base-spacing;
+	}
+	.es-stream-pinned-divider,
+	.es-bleed--middle,
+	.es-users-item {
+		margin-left: -@si-base-spacing;
+		margin-right: -@si-base-spacing;
+	}
+	.es-forms__actions,
+	.es-bleed--bottom {
+		margin-left: -@si-base-spacing;
+		margin-right: -@si-base-spacing;
+		margin-bottom: -@si-base-spacing;
+	}
+
+	
+}
+
+.es-users-item {
+	border-top: 1px solid @si-border-color;
+	&:last-child {
+		border-bottom: 1px solid @si-border-color;
+	}
+}
+
+// z-index
+body.is-es-photo-popup {
+	#sp-header.menu-fixed {
+		z-index: 1048;
+	}
+}
+
+// ES main (component)
+body #es.es-main {
+	display: block;
+	height: 100%;
+	.es-dashboard,
+	.es-container,
+	.wrapper-for-full-height,
+	.es-profile,
+	.app-contents-wrap,
+	.app-explorer,
+	.es-app-canvas,
+	.es-group-category  {
+		height: 100%;
+	}
+}
+
+
+
+
+// ES objects
+// ----------------
+body #es .o-avatar {
+	border-radius: @si-avatar-radius;
+	img {
+		border-radius: @si-avatar-radius;
+	}
+}
+
+body #es .o-media {
+	&__image {
+		margin-right: @si-base-spacing;
+	}
+}
+body #es .o-alert {
+	border-radius: 0;
+}
+body #es {
+	.o-empty {
+		min-height: 100px;
+		&__icon {
+			display: none; // #13
+		}	
+	}
+	
+}
+
+
+// Sidebar
+// ----------------
+#es .es-sidebar hr.es-hr {
+	margin: @si-base-spacing 0 @si-base-spacing--lg;
+	// border-top: 0;
+}
+#es .es-sidebar .widgets-wrapper + hr.es-hr {
+	margin: 0;
+}
+#es .es-side-widget + .es-side-widget, #es .es-side-widget + .widgets-wrapper {
+	margin-top: @si-base-spacing--lg;
+}
+
+// Conversekit
+// ---------------
+// For mobile to tablets portrait 
+@media (min-width: 320px) and (max-width: @screen-lg) {
+	// Fix 57: Realign conversekit button on mobile.
+	.is-tablet #ck .layout-compact,
+	.is-mobile #ck .layout-compact {
+		display: none;
+	}
+}
+
+
+// Dating search form
+// ----------------------
+#es .es-sidebar .mod-es-dating-search-form {
+	padding: 0;
+	border: none;
+}
+
+// Weather module
+// ----------------
+// Fixed loader on weather module. ES#1778
+#es .es-weather {
+	position: relative;
+}
+
+// Pull to refresh loader #66
+// ----------------
+#es .ptr--ptr {
+	box-shadow: none;
+	.align-items(center);
+}
+#es .ptr--pull ~ .es-profile-header:not(.es-profile-header--mini),
+#es .ptr--refresh ~ .es-profile-header:not(.es-profile-header--mini) {
+	margin-top: 0 !important;
+}

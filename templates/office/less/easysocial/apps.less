@@ -1,0 +1,67 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+// Apps
+// ----------------
+.es-apps-item {
+	border-top: 1px solid @si-border-color;
+
+	margin: 0 -@si-base-spacing;
+	padding: @si-base-spacing;
+	&__ft {
+		background-color: transparent;
+		margin: 0;
+		border: none;
+	}
+}
+
+
+// #70 Calendar apps
+.fc-button {
+	border-color: #ececec !important;
+	height: auto;
+}
+.fc-state-default {
+	background-color: #fff !important;
+	background-image: none;
+	box-shadow: none;
+	padding: 6px 12px;
+	line-height: 1.666666667;
+	font-size: 12px;
+	font-weight: bold;
+	&:hover {
+		background-color: @si-bg-shade !important;	
+	}
+}
+.fd-state-hover {
+	background-color: @si-bg-shade !important;
+}
+.fc-button-today.fc-state-disabled,
+.fc-state-active {
+	border-bottom: 1px solid transparent;
+}
+.fc-button-prev .fc-text-arrow, 
+.fc-button-next .fc-text-arrow {
+	font-size: 16px;
+	line-height: 1;
+	margin: 0;
+}
+
+&.is-mobile {
+	.fc-header {
+		margin-bottom: 20px;
+		td {
+			display: block;
+			text-align: center;
+			width: 100%;
+		}
+	}
+	.fc-header-title {
+		h2 {
+			font-size: 24px;
+		}
+	}
+}

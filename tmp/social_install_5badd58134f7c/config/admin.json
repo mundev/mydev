@@ -1,0 +1,37 @@
+[
+	{
+		"title": "APP_USER_TWITTER_SETTINGS_AUTOPOSTING",
+		"fields":
+		[
+			{
+				"label": "APP_USER_TWITTER_SETTINGS_ALLOW_AUTOPOSTING",
+				"tooltip": "APP_USER_TWITTER_SETTINGS_ALLOW_AUTOPOSTING_DESC",
+				"name": "autopost",
+				"type": "boolean",
+				"default": true
+			}
+		]
+	},
+	{
+		"title": "APP_USER_TWITTER_SETTINGS_PROFILE",
+		"fields":
+		[
+			{
+				"label": "APP_USER_TWITTER_SETTINGS_DISPLAY_TWITTER_WIDGET",
+				"tooltip": "APP_USER_TWITTER_SETTINGS_DISPLAY_TWITTER_WIDGET_DESC",
+				"name": "profile_widget",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_USER_TWITTER_SETTINGS_WIDGET_HEIGHT",
+				"tooltip": "APP_USER_TWITTER_SETTINGS_WIDGET_HEIGHT_DESC",
+				"name": "widget_height",
+				"type": "text",
+				"class": "input-short text-center",
+				"suffix": "pixels",
+				"default": 400
+			}
+		]
+	}
+]

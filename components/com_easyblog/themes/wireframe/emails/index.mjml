@@ -1,0 +1,91 @@
+<mjml>
+	<mj-body>
+		<mj-container background-color="#DBDFE2">
+
+				<mj-section>
+					<mj-column>
+
+						<mj-image width="160" padding-left="10" padding-bottom="0" align="left" src="http://eb51.dev/media/com_easyblog/images/email-logo.png" />
+
+					</mj-column>
+				</mj-section>
+
+
+				<mj-section padding-top="1" padding-bottom="0" background-color="#fff">
+				
+						<mj-column background-color="#fff" width="94%">
+							
+							<mj-text font-size="12px" color="#666" font-family="helvetica" padding-left="10" padding-bottom="0">Notification</mj-text>
+							<mj-text font-size="20px" color="#222" font-family="helvetica" padding-left="10" padding-top="10">Hello World, blog title</mj-text>
+							
+						</mj-column>
+
+				</mj-section>
+				
+				<mj-section padding-left="1" padding-right="1" padding-top="10" padding-bottom="0" background-color="#fff">
+					<mj-group background-color="#F4F7F9" width="94%">
+						<!-- Left image -->
+						<mj-column width="">
+							<mj-image width="48" height="48" padding-top="30" padding-right="0" border-radius="50%" align="left" src="http://eb51.dev/media/com_easyblog/images/avatar.png" />
+						</mj-column>
+
+						<!-- right paragraph -->
+						<mj-column background-color="#F4F7F9" width="">
+							<mj-text font-size="20" font-family="Helvetica Neue" color="#4E92DF" padding-top="30"padding-bottom="0">
+								Find amazing places
+							</mj-text>
+
+							<mj-text color="#525252" padding-top="0">Meta</mj-text>
+
+						</mj-column>
+					</mj-group>
+				</mj-section>
+
+
+				<mj-section padding-left="1" padding-right="1" padding-top="0" padding-bottom="0" background-color="#fff">
+						<mj-column background-color="#F4F7F9" width="94%">
+							
+							<mj-text font-size="13px" color="#888" font-family="helvetica">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</mj-text>
+
+								<mj-button background-color="#54C063" href="#" align="left">
+									View Post
+								</mj-button>
+						</mj-column>
+
+				</mj-section>
+
+				<!-- decoration -->
+				<mj-section padding="1" padding-top="20" background-color="#fff">
+						<mj-column background-color="#fff">
+						</mj-column>
+				</mj-section>
+
+				<!-- decoration -->
+				<mj-section padding-top="0" padding-bottom="1" background-color="#B7C0CC">
+						<mj-column background-color="#fff">
+						</mj-column>
+				</mj-section>
+
+				
+				<mj-section full-width="full-width">
+					<mj-column width="100%" vertical-align="middle">
+						<mj-text align="left" font-size="11" padding-bottom="0" padding-top="0">
+							<p style="font-size: 11px">[[DELIVERY_INFO]]</p>
+						</mj-text>
+						<mj-text align="left" font-size="11" padding-bottom="0" padding-top="0">
+							<p style="font-size: 11px">[[POSTAL_ADDRESS]]</p>
+						</mj-text>
+					</mj-column>
+				</mj-section>
+			
+
+			
+		</mj-container>
+		
+	</mj-body>
+</mjml>

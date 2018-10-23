@@ -1,0 +1,101 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+
+// Module
+// ----------------
+// body #es .mod-es-leader-item {
+// 	margin: 0 -@si-base-spacing--lg;
+// 	padding: 0 @si-base-spacing--lg;
+// 	border-color: @si-border-color !important;
+// }
+// body #es .mod-es-leader-item+.mod-es-leader-item {
+// 	margin-top: @si-base-spacing--lg;
+// 	padding-top: @si-base-spacing--lg;
+// }
+
+body #es .mod-es-action .btn {
+	display: block;
+	width: 100%;
+}
+
+body #es .es-sidebar { // 240 width
+	#es.es-widget-calendar {
+		.transform_(scale(0.95));
+		left: -0.5em;
+	}
+}
+body #es.es-widget-calendar {
+
+	table {
+		background-color: #fff;
+		border: 1px solid @si-border-color;
+		border-collapse: separate;
+	}
+	
+	.day {
+		padding-bottom: @si-base-spacing;
+		background-color: transparent;
+		a {
+			display: inline-block;
+			padding: 4px;
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			&:hover {
+				background-color: @si-bg-shade;
+			}
+		}
+		&:hover {
+			background-color: transparent !important;
+			
+		}
+		&.is-today {
+			background-color: transparent;
+			a {
+				color: #fff;
+				background: @si-bg-notice;
+			}
+		}
+		&.has-events {
+			background-color: transparent !important;
+			a {
+				&:before {
+					border-radius: 50%;
+					background-color: #D65250;
+					border-color: transparent;
+					right: auto;
+					bottom: -@si-base-spacing--sm;
+					left: 50%;
+					margin-left: -2px;
+					width: 4px;
+					height: 4px;
+					border: 0;
+				}
+			}
+
+		}
+	}
+	.is-today {
+		
+	}
+}
+
+// Specifically to hide officecontenttop & officecontentbottom from appearing on sidebar.
+.office-container__content {
+	> .officecontenttop {
+		display: none;
+	}
+	> .officecontentbottom {
+		display: none;
+	}
+}
+.officecontenttop {
+	margin-bottom: @si-base-spacing--xl;
+}
+.officecontentbottom {
+	margin-top: @si-base-spacing--xl;
+}

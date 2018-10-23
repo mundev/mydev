@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<social type="apps" group="user">
+	<name>Blog</name>
+	<element>blog</element>
+	<author>Stack Ideas Sdn Bhd</author>
+	<url>http://stackideas.com</url>
+	<created>2nd November 2016</created>
+	<version>2.1.8</version>
+	<copyright>Copyright (C) 2010 - 2016 Stack Ideas Sdn Bhd</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<installable>true</installable>
+	<core>false</core>
+	<views>
+		<view type="embed">profile</view>
+	</views>
+	<description>
+		<![CDATA[APP_BLOG_APP_DESCRIPTION]]>
+	</description>
+	<widget>false</widget>
+	<files>
+		<folder>config</folder>
+		<folder>gdpr</folder>
+		<folder>hooks</folder>
+		<folder>models</folder>
+		<folder>themes</folder>
+		<folder>views</folder>
+		<file>blog.php</file>
+		<file>blog.xml</file>
+		<file>story.js</file>
+	</files>
+	<languages>
+		<language type="en-GB">en-GB.plg_app_user_blog.ini</language>
+	</languages>
+	<updates>
+		<version>2.1.8</version>
+		<patch>http://stackideas.com/updater/easysocial/apps/patch</patch>
+	</updates>
+</social>

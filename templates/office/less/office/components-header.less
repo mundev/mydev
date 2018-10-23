@@ -1,0 +1,402 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+#sp-officecontent {
+	.si-components-header {
+		.flex-display(flex);
+		// margin-bottom: @si-base-spacing;
+		padding: 0 @si-base-spacing @si-base-spacing;
+		margin-left: -@si-base-spacing;
+		margin-right: -@si-base-spacing;
+		border-bottom: 1px solid @si-border-color;
+		background-color: @si-bg;
+		&__action {
+			.flex(1 0 auto);
+		}
+		&__settings {
+			margin-left: auto;
+			.flex-display(flex);
+			.align-items(center);
+			.flex(0 1 auto);
+			> div {
+				.flex(1 0 auto);
+				.flex-display(flex);
+				.align-items(center);
+				padding: 0 @si-base-spacing--sm;
+				> a {
+					color: @si-text-color !important;
+					width: 12px;
+				}
+			}
+			a {
+				color: @si-text-color;
+			}
+		}
+		.dropdown_ {
+			position: relative;
+		}
+		&__link-bubble {
+			font-size: 0;
+			top: 0;
+			right: -4px;
+			// background-color: #6CB3CD;
+			border-radius: 50%;
+			min-width: 8px;
+			height: 8px;
+			line-height: 8px;
+			padding: 0;
+			position: absolute;
+			display: none; // hide by default
+		}
+		.has-new {
+			.si-components-header__link-bubble {
+				display: block;
+			}
+		}
+		&__dropdown-menu {
+
+			right: 0;
+			left: auto;
+			padding: 0;
+			margin-top: 5px;
+			width: 260px;
+
+		}
+	}
+	
+	// Main styling for popbox as dropdown menu
+	.popbox-dropdown {
+		// padding: @si-base-spacing @si-base-spacing--lg;
+		min-width: 200px;
+		padding: 0;
+		background-color: #fff;
+		&__hd,
+		&__bd,
+		&__ft {
+			.clearfix();
+		}
+
+		&__hd {
+			padding: @si-base-spacing--sm @si-base-spacing--lg;
+			font-size: @si-font-size;
+			border-bottom: 1px solid @si-border-color;
+
+			// o-flag
+			&-flag {
+				display: table;
+				width: 100%;
+			}
+			&-body {
+				width: 100%;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			&-image {
+				display: table-cell;
+				vertical-align: middle;
+				width: 1%;
+				padding-left: 8px;
+				padding-right: 0;
+			}
+		}
+
+		&__bd {
+			background: #fff;
+			// padding: @si-base-spacing;
+			padding: 0;
+			font-size: @si-font-size;
+
+			.o-empty__content {
+				width: 100%;
+			}
+		}
+		&__ft {
+			background: #fff;
+			color: @si-meta-color;
+			font-size: @si-font-size--xs;
+			padding-top: @si-base-spacing;
+		}
+		
+		&__title {
+			font-weight: bold;
+			color: @si-meta-color;
+		}
+		&__meta {
+			color: @si-meta-color;
+			font-size: @si-font-size--xs;
+		}
+
+		&__note { // <a>
+			.no-focus-outline();
+		}
+
+
+	}
+
+	.popbox-dropdown-nav {
+		max-height: 400px; // #208
+		overflow-y: auto;
+		overflow-x: hidden;
+		background-color: #fff;
+		>:not(:first-child) {
+			// margin-top: @si-base-spacing;
+		}
+		&__item {
+			// background-color: @fd-ui-bg;
+			// border: 1px solid @si-border-color;
+			padding: 0;
+			border: none;
+			font-size: @si-font-size;
+			&:hover {
+				// background: @fd-navbar-dropdown-hover-bg;
+				border: none;
+			}
+			+ .popbox-dropdown-nav__item {
+				border-top: 1px solid @si-border-color;
+			}
+		}   
+		&__link {
+			padding: @si-base-spacing @si-base-spacing--lg;
+			width: 100%;
+			display: inline-block;
+			.no-focus-outline();
+		}
+		&__icon {
+			width: 16px;
+			height: 16px;
+			font-size: 16px;
+			text-align: center;
+			margin: 0 @si-base-spacing--sm;
+			color: @si-meta-color;
+			position: relative;
+			// top: @si-base-spacing--sm;
+		}
+		&__post {
+			color: @fd-ui-text-color;
+		}
+		&__name,
+		&__post-user-name {
+			font-weight: bold;
+			color: @si-text-color;
+			margin-bottom: 4px;
+		}
+		&__link,
+		&__post-name,
+		&__post-user-name {
+			// color: @fd-ui-text-link-color;
+		}
+		
+		&__meta-lists { // ol,ul
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			color: @si-meta-color;
+			> li {
+				line-height: 1.65;
+			}
+			a { // Applied to all link
+				color: @si-meta-color;
+				display: block;
+				position: relative;
+				&:hover {
+					background-color: transparent;
+					color: @fd-ui-text-color;
+				}
+				.fa {
+					display: none; // Hide all icons by default
+				}
+			}
+		}
+
+		&__indicator {
+			background-color: @eb-navbar-indicator-bg;
+			display: inline-block;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+		}
+
+		&__counter {
+			position: absolute;
+			top: 0;
+			right: 0;
+
+		}
+
+		&__image {
+			.clearfix();
+			position: relative;
+			// background-color: @popboxNoticeBackground;
+			border: 1px solid transparent;
+			display: inline-block;
+			margin-left: @si-base-spacing;
+			outline: none;
+			padding: 1px;
+			position: relative;
+			float: right;
+			> span {
+				width: 52px;
+				height: 40px;
+				background-color: transparent;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				display: block;
+			}
+		}
+
+		// Override 
+		.ed-user-name {
+			font-size: 14px;
+		}
+
+	}
+	
+}
+
+// ed 
+.ed-subscribe {
+	.flex-display(flex);
+	> div {
+		+ div {
+			margin-left: @si-base-spacing--sm;
+		}
+	}
+}
+&:not(.is-mobile) .si-components-header [data-subscription-form] {
+	span {
+		display: none; 
+	}
+}
+
+.si-components-nav {
+	border-bottom: 1px solid @si-border-color;
+	padding: 0 @si-base-spacing ;
+	margin-left: -@si-base-spacing;
+	margin-right: -@si-base-spacing;
+	margin-bottom: @si-base-spacing;
+	position: relative;
+	background-color: @si-bg;
+	.flex-display(flex);
+	.flex-wrap(wrap); // #1534
+
+	&__item {
+		.flex-display(flex);
+		.flex(0 1 auto);
+		position: relative;
+	}
+
+	&__link {
+		.flex-display(flex);
+		.flex-wrap(wrap); // using nowrap causing last item might drop to second lines and causing dropdown menu unusable
+		color: @si-text-color;
+		padding: 12px 16px 6px;
+		font-size: @si-font-size;
+		border-bottom: 3px solid transparent;
+		.fd-no-focus-outline();
+		> i { // the only icon now i-chevron--down
+			position: relative;
+			top: 2px;
+			left: 2px;
+		}
+		span {
+			.flex(1 0 auto);
+		}
+	}
+	
+
+	.btn-group {
+		.flex-display(flex);
+
+		&.open .dropdown-toggle_ {
+			color: @si-text-color !important;
+			background-color: transparent !important;
+			box-shadow: none !important;
+
+		}
+	}
+
+	// states
+	.is-active {
+		.si-components-nav__link {
+			// color: @fd-brand-primary;
+			// border-bottom-color: @fd-brand-primary;
+		}
+		> .si-components-nav__dropdown-link {
+			// border-color: @fd-brand-primary;
+		}
+	}
+	.has-notice {
+		.si-components-nav__link-bubble {
+			display: block;
+		}
+	}
+
+	
+	&__dropdown-link {
+		border-left: 3px solid transparent;
+	}
+}
+&.is-mobile {
+	.si-components-nav {
+		.justify-content(space-around);
+		padding: 0;
+		&__item {
+			.flex(1);
+			.justify-content(center);
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.si-components-nav {
+		&__link {
+			padding-left: 8px;
+			padding-right: 8px;
+		}
+	}
+}
+
+
+
+
+// Custom dropdown chevron 
+.i-chevron {
+	// color: @fd-ui-text-color;
+	&:before {
+		border-style: solid;
+		border-width: .1em .1em 0 0;
+		content: '';
+		display: inline-block;
+		width: .5em;
+		height: .5em;
+		
+		position: relative;
+		top: .45em;
+		left: 0;
+		
+		vertical-align: top;
+		
+	}
+	&.i-chevron--up:before {
+		top: .5em;
+		.transform_(rotate(-45deg));
+	}
+
+	&.i-chevron--right:before {
+		left: 0;
+		.transform_(rotate(45deg));
+	}
+
+	&.i-chevron--down:before {
+		top: 0.25em;
+		.transform_(rotate(135deg));
+	}
+
+	&.i-chevron--left:before {
+		left: .15em;
+		.transform_(rotate(-135deg));
+	}
+}

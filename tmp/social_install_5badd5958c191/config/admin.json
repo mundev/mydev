@@ -1,0 +1,82 @@
+[
+	{
+		"title": "APP_REVIEWS_GENERAL_SETTINGS",
+		"desc": "APP_REVIEWS_GENERAL_SETTINGS_DESC",
+		"fields":
+		[
+			{
+				"label": "APP_REVIEWS_MODERATE_REVIEWS",
+				"tooltip": "APP_REVIEWS_MODERATE_REVIEWS_DESC",
+				"name": "enable_moderation",
+				"type": "boolean",
+				"default": false
+			}
+		]
+	},
+	{
+		"title": "APP_PAGE_REVIEWS_PAGES_VIEW",
+		"desc": "APP_PAGE_REVIEWS_PAGES_VIEW_DESC",
+		"fields":
+		[
+			{
+				"label": "APP_PAGE_REVIEWS_TOTAL_REVIEWS",
+				"tooltip": "APP_PAGE_REVIEWS_TOTAL_REVIEWS_DESC",
+				"name": "total",
+				"class": "input-mini center",
+				"type": "text",
+				"default": 10
+			},
+			{
+				"label": "APP_PAGE_REVIEWS_CONTENT_LENGTH",
+				"tooltip": "APP_PAGE_REVIEWS_CONTENT_LENGTH_DESC",
+				"name": "content_length",
+				"class": "input-mini center",
+				"type": "text",
+				"default": 350
+			},
+			{
+				"label": "APP_PAGE_REVIEWS_DISPLAY_CREATION_DATE",
+				"tooltip": "APP_PAGE_REVIEWS_DISPLAY_CREATION_DATE_DESC",
+				"name": "display_date",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_PAGE_REVIEWS_DISPLAY_AUTHOR_NAME",
+				"tooltip": "APP_PAGE_REVIEWS_DISPLAY_AUTHOR_NAME_DESC",
+				"name": "display_author_name",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_PAGE_REVIEWS_DISPLAY_AUTHOR_AVATAR",
+				"tooltip": "APP_PAGE_REVIEWS_DISPLAY_AUTHOR_AVATAR_DESC",
+				"name": "display_author_avatar",
+				"type": "boolean",
+				"default": true
+			}
+		]
+	},
+	{
+		"title": "APP_PAGE_REVIEWS_PAGES_WIDGETS_VIEW",
+		"desc": "APP_PAGE_REVIEWS_PAGES_WIDGETS_VIEW_DESC",
+		"fields":
+		[
+			{
+				"label": "APP_PAGE_REVIEWS_WIDGETS_DISPLAY_WIDGET",
+				"tooltip": "APP_PAGE_REVIEWS_WIDGETS_DISPLAY_WIDGET_DESC",
+				"name": "widget",
+				"type": "boolean",
+				"default": true
+			},
+			{
+				"label": "APP_PAGE_REVIEWS_WIDGETS_TOTAL_ITEMS",
+				"tooltip": "APP_PAGE_REVIEWS_WIDGETS_TOTAL_ITEMS_DESC",
+				"name": "widgets_total",
+				"class": "input-mini center",
+				"type": "text",
+				"default": 5
+			}
+		]
+	}
+]

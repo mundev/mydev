@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<social type="apps" group="user">
+	<name>Komento</name>
+	<element>komento</element>
+	<author>Stack Ideas Sdn Bhd</author>
+    <url>http://stackideas.com</url>
+    <created>2nd November 2016</created>
+    <version>2.0.1</version>
+    <copyright>Copyright (C) 2010 - 2016 Stack Ideas Sdn Bhd</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<installable>true</installable>
+	<core>false</core>
+	<widget>true</widget>
+	<description><![CDATA[APP_USER_KOMENTO_APP_DESCRIPTION]]></description>
+	<views>
+		<view type="embed">profile</view>
+	</views>
+	<files>
+		<folder>config</folder>
+		<folder>themes</folder>
+		<folder>views</folder>
+		<folder>widgets</folder>
+		<file>helper.php</file>
+		<file>komento.php</file>
+		<file>komento.xml</file>
+	</files>
+	<languages>
+		<language type="en-GB">en-GB.plg_app_user_komento.ini</language>
+	</languages>
+</social>

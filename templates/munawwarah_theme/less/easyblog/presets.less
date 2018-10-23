@@ -1,0 +1,90 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+body #eb .eb-post-title,
+body #eb .eb-post-title a,
+body #eb .btn-default,
+body #eb .btn-default:hover,
+body #eb .btn-default:focus,
+body #eb .btn-default:active,
+body #eb .btn-default.active,  
+.open #eb.dropdown-toggle_ .btn-default, 
+body #eb .eb-table tbody > tr td .post-actions a {
+	color: @major_color !important;	
+}
+
+body #eb .btn-primary, 
+body #eb .eb-more__btn {
+	color: #fff !important;
+	background-color: @major_color !important;
+	border-color: darken(@major_color, 6%) !important;
+}
+
+body #eb .btn-primary:hover, 
+body #eb .btn-primary:focus, 
+body #eb .btn-primary:active,
+body #eb .btn-primary.active, 
+body #eb .eb-more__btn:hover, 
+body #eb .eb-more__btn:focus, 
+body #eb .eb-more__btn:active {
+	color: #fff !important;
+	background-color: darken(@major_color, 6%) !important;
+	border-color: darken(@major_color, 6%) !important;
+}
+
+body #eb .btn {
+	font-weight: normal;
+}
+
+#eb .is-active > .eb-navbar__footer-link:before {
+	background-color: transparent !important;
+}
+
+#eb .eb-navbar__footer-link {
+	color: @text_color !important;
+}
+
+#eb .eb-blog-grid-showcase-content__meta a, 
+#eb .eb-blog-grid__meta a, 
+#eb .is-active > .eb-navbar__footer-link, 
+#eb .eb-navbar__footer-link:hover {
+	color: @major_color !important;
+}
+
+#eb .eb-blog-grid-showcase-content__meta a:hover, 
+#eb .eb-blog-grid-showcase-content__meta a:focus, 
+#eb .eb-blog-grid-showcase-content__meta a:active, 
+#eb .eb-blog-grid__meta a:hover, 
+#eb .eb-blog-grid__meta a:focus, 
+#eb .eb-blog-grid__meta a:active, 
+body #eb .eb-table tbody > tr td .post-actions a:hover {
+	color: darken(@major_color, 6%) !important;
+}
+
+#eb .eb-authors-subscribe > span a {
+	color: @major_color !important;
+	text-decoration: none;
+	&:hover, 
+	&:focus, 
+	&:active {
+		text-decoration: underline;
+	}
+}
+
+
+// Active
+body #eb.mod-easyblogshowcase-slick .eb-gallery-content__meta a,
+body #eb.mod-easyblogshowcase-slick .eb-gallery-content__meta a:hover,
+body #eb.mod-easyblogshowcase-slick .eb-gallery-content__meta a:focus, 
+body #eb.mod-easyblogshowcase-magazine .eb-gallery-content__meta a,
+body #eb.mod-easyblogshowcase-magazine .eb-gallery-content__meta a:hover,
+body #eb.mod-easyblogshowcase-magazine .eb-gallery-content__meta a:focus,
+body #eb .eb-blog-grid-label {
+	color: @active_color;	
+}
+body #eb.mod-easyblogshowcase-magazine .eb-gallery-buttons .active {
+	background-color: @active_color;
+}

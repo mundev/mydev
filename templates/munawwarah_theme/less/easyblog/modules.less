@@ -1,0 +1,57 @@
+/** 
+* @package      Office
+* @copyright    Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd. All rights reserved.
+* @license      Proprietary Use License https://stackideas.com/licensing
+**/
+
+body #eb {
+	&.eb-mod *, 
+	.eb-mod * {
+		line-height: 1.6;
+	}
+
+	.eb-mod-media-title {
+		font-weight: bold;
+	}
+
+	.eb-mod-title {
+		font-size: @si-font-size;
+	}
+	.mod-item {
+		+ .mod-item {
+			margin-top: @si-base-spacing;
+			padding-top: @si-base-spacing;
+		}
+	}
+}
+
+// Showcase magazine layout
+body #eb.mod-easyblogshowcase-magazine.is-mobile .eb-gallery-viewport {
+	margin-bottom: @si-base-spacing;
+}
+body #eb.mod-easyblogshowcase-magazine.is-mobile .eb-gallery-stage {
+	border-radius: 0;
+}
+body #eb.mod-easyblogshowcase-magazine.is-mobile .eb-gallery-content {
+	position: absolute !important;
+	background-color: transparent !important;
+	top: 0;
+}
+body #eb.mod-easyblogshowcase-magazine.is-mobile .eb-gallery-cover__img {
+	padding-bottom: 260px !important;
+	background-position: top center !important;
+}
+body #eb.mod-easyblogshowcase-magazine.is-mobile .eb-mod-thumb {
+	margin: 0 !important;
+}
+body #eb.mod-easyblogshowcase-magazine.is-mobile .eb-gallery-buttons .eb-gallery-menu-item {
+	height: 16px !important;
+}
+body #eb.mod-easyblogshowcase-magazine .eb-gallery-content__title {
+	height: 30px !important;
+	overflow: hidden;
+	.text-overflow() !important;
+}
+body #eb.mod-easyblogshowcase-magazine .eb-gallery-content__article {
+	display: none !important;
+}
