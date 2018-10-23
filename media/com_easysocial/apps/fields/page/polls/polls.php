@@ -121,7 +121,8 @@ class SocialFieldsPagePolls extends SocialFieldsUserBoolean
 		if (!$this->canUsePolls($access)) {
 			return;
 		}
-				
+		
+		$params = $page->getParams();	
 		// Get the posted value
 		$value = isset($post[$this->inputName]) ? $post[$this->inputName] : $params->get('polls', $this->params->get('default', true));
 		$value = (bool) $value;

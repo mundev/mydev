@@ -121,7 +121,10 @@ class SocialFieldsPageFiles extends SocialFieldsUserBoolean
 		if (!$this->canUseFiles($access)) {
 			return;
 		}
-				
+			
+		// The value will always be the page title
+		$params = $page->getParams();
+
 		// Get the posted value
 		$value = isset($post[$this->inputName]) ? $post[$this->inputName] : $params->get('files', $this->params->get('default', true));
 		$value = (bool) $value;

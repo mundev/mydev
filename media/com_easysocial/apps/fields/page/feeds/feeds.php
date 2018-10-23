@@ -107,7 +107,7 @@ class SocialFieldsPageFeeds extends SocialFieldsUserBoolean
 		if (!$this->appEnabled(SOCIAL_APPS_GROUP_PAGE)) {
 			return;
 		}
-				
+		$params = $page->getParams();		
 		// Get the posted value
 		$value = isset($post[$this->inputName]) ? $post[$this->inputName] : $params->get('feeds', $this->params->get('default', true));
 		$value = (bool) $value;

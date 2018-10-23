@@ -115,7 +115,7 @@ class SocialFieldsPageDiscussions extends SocialFieldsUserBoolean
 		if (!$this->canUseDiscussions($access)) {
 			return;
 		}
-				
+		$params = $page->getParams();		
 		// Get the posted value
 		$value = isset($post[$this->inputName]) ? $post[$this->inputName] : $params->get('discussions', $this->params->get('default', true));
 		$value = (bool) $value;
